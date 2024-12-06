@@ -13,7 +13,7 @@ const Courses = () => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Xendar | Courses</title>
+        <title>The Brain Connections | Courses</title>
       </Head>
       <CenterItemStyle>
         <BigSectionHead

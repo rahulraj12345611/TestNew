@@ -96,7 +96,8 @@
     const router = useRouter();
     const showDetail = () => {
       // omor this worked like magic: for escaping symbols in urls
-      const path = "/courses/" + encodeURIComponent(name);
+      // const path = "/courses/" + encodeURIComponent(name);
+      const path = "/";
       // push the id
       router.push({
         pathname : path,
@@ -113,7 +114,8 @@
           <TabOnly>
             <Image
               alt={name}
-              src={img}
+              // src={img}
+              src="https://img.freepik.com/free-photo/pleased-middle-aged-male-teacher-wearing-glasses-standing-front-blackboard-looking-camera-with-magnifier_141793-105391.jpg?uid=R173935929&ga=GA1.1.295393558.1731326796&semt=ais_hybrid"
               width={340}
               height={226}
               className="desktop img"
@@ -121,7 +123,8 @@
             />
             <Image
               alt={name}
-              src={img}
+              // src={img}
+              src="/brain/brain_logo.jpeg"
               width={230}
               height={140}
               className="tab img"
@@ -129,7 +132,8 @@
             />
             <Image
               alt={name}
-              src={img}
+              // src={img}
+              src="/brain/brain_logo.jpeg"
               width={164}
               height={105}
               className="mobile img"
@@ -165,7 +169,7 @@
             <hr />
             <div className="content-inner">
               <div className="prices">
-                <h4>&#8358;{nairaPrice?.toLocaleString()}</h4>
+                <h4>₹ {nairaPrice?.toLocaleString()}</h4>
                 <span>${dollarPrice}</span>
               </div>
               <FavEmojiButton

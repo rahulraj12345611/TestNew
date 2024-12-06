@@ -1709,7 +1709,7 @@ export const TeamMembers: ITeamMember[] = [
 export const Contacts: IReachout[] = [
   {
     name: "Email",
-    deet: "Xendargroup@gmail.com",
+    deet: "The Brain Connectionsgroup@gmail.com",
     note: "You can send us an email and we’ll get back to you.",
     svg: "email",
     link: "mailto:judetochyokoye@gmail.com",

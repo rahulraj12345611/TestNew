@@ -8,7 +8,7 @@ const Stats: FunctionComponent = () => {
       <div className="short">
         <div className="one">
           <h4>2k+</h4>
-          <p>Present/Past Interns</p>
+          <p>Users</p>
         </div>
         <hr />
         <div className="one">
@@ -17,8 +17,8 @@ const Stats: FunctionComponent = () => {
         </div>
         <hr />
         <div className="one">
-          <h4>25+</h4>
-          <p>Tutors</p>
+          <h4>100+</h4>
+          <p>vidoes</p>
         </div>
       </div>
     </StatStyles>

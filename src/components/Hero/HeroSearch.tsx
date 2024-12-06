@@ -25,7 +25,7 @@ const HeroSearch = () => {
   const router = useRouter();
   const handleSearch = (data: ISearchProps) => {
     dispatch(setSearchQuery(data.query));
-    router.push("/courses");
+    // router.push("/courses");
     reset();
   };
   return (
@@ -36,14 +36,14 @@ const HeroSearch = () => {
             <HeroMagnifyingGlass />
             <input
               type="text"
-              placeholder="Product design"
+              placeholder="Search ..."
               {...register("query", { required: "Query is required" })}
             />
           </div>
           <div className="mobile error">
             <ErrorStyles>{errors?.query && errors.query.message}</ErrorStyles>
           </div>
-          <FormButton>Search</FormButton>
+          <FormButton className="bg-red-500">Search</FormButton>
         </HeroSearchStyles>
         <div className="desktop error">
           <CenterErrorForMinitab>

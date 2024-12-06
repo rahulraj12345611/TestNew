@@ -173,7 +173,7 @@ export const ReasonStyles = styled(motion.div).attrs(() => ({
 
 export const TestimonialStyles = styled.div`
   margin-top: 0.5rem;
-  background: var(--purple-100, #e5d4f5);
+  background: var(--purple-100, #90EE90);
   .testimonies {
     margin-top: 1.5rem;
     display: flex;

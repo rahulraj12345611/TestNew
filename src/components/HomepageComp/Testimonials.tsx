@@ -21,7 +21,7 @@ export const Testimonials: FunctionComponent = () => {
     <TestimonialStyles>
       <ActualPaddedSectionStyle>
         <SectionHead
-          bigtext="Let Them Speak For Us"
+          bigtext="Listen from our students"
           smalltext="Some reviews from our past and present trainees"
         />
         <div className="testimonies">
@@ -79,7 +79,11 @@ export const Testimony: FunctionComponent<ITestimony> = ({
       </div>
       <div className="below">
         <Union />
-        <Image src={img} width={64} height={64} alt={name} />
+        <Image 
+        src="/brain/brain_logo.jpeg"
+        // src={img}
+        width={64} height={64} alt={name} 
+        />
         <h4>{name}</h4>
         <span>{position}</span>
       </div>

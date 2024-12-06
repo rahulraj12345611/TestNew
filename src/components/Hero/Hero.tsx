@@ -18,17 +18,18 @@ const Hero: FunctionComponent = () => {
       <HeroStyles>
         <div className="hero-text">
           <h1>
-            Let’s help you <strong>{text} <span><Cursor cursorColor="#531989" /></span></strong> <br />
-            your career in <strong>Tech</strong>
+            Let’s help you <strong style={{"color": "green"}}>{text} <span><Cursor cursorColor="#228B22" /></span></strong> <br />
+            your career in <strong style={{"color": "green"}}>Learning</strong>
           </h1>
           <p className="hero-p">
-            Xendar is an inclusive E-Learning platform that specializes in helping
+            The Brain Connections is an inclusive E-Learning platform that specializes in helping
             people kickstart their journey into the evolving world of technology
           </p>
           <HeroSearch />
           <div className="alink">
-            <Link href={"/courses"}>
-              <LinkStyle color="var(--purple, #7d26cd)">
+            {/* <Link href={"/courses"}> */}
+            <Link href={"/"}>
+              <LinkStyle color="var(--green, #4F7942)">
                 View Our Courses
               </LinkStyle>
             </Link>
@@ -38,7 +39,8 @@ const Hero: FunctionComponent = () => {
           <TabOnly>
             <Image
               alt="hero img"
-              src="/assets/hero.png"
+              // src="/assets/hero.png"
+              src="https://img.freepik.com/free-photo/boy-with-glasses-man-writing-classroom_1150-24966.jpg?uid=R173935929&ga=GA1.1.295393558.1731326796&semt=ais_hybrid"
               width={700}
               height={500}
               sizes="100%"
@@ -46,7 +48,8 @@ const Hero: FunctionComponent = () => {
             />
             <Image
               alt="hero img"
-              src="/assets/hero_mobile.png"
+              src="https://img.freepik.com/free-photo/boy-with-glasses-man-writing-classroom_1150-24966.jpg?uid=R173935929&ga=GA1.1.295393558.1731326796&semt=ais_hybrid"
+              // src="/assets/hero_mobile.png"
               width={400}
               height={300}
               className="tab"
@@ -54,7 +57,8 @@ const Hero: FunctionComponent = () => {
             />
             <Image
               alt="hero img"
-              src="/assets/hero_mobile.png"
+              src="https://img.freepik.com/free-photo/boy-with-glasses-man-writing-classroom_1150-24966.jpg?uid=R173935929&ga=GA1.1.295393558.1731326796&semt=ais_hybrid"
+              // src="/assets/hero_mobile.png"
               width={0}
               height={0}
               sizes="100vw"

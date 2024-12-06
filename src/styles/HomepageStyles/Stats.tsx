@@ -13,7 +13,7 @@ export const StatStyles = styled.div`
     // align-items: center;
   }
   h4 {
-    color: var(--purple, #7d26cd);
+    color: var(--green, #50C878);
     text-align: center;
     font-size: 2.25rem;
     font-family: Raleway;

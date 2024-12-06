@@ -34,7 +34,7 @@ const SubscribeComp: FunctionComponent = () => {
             <div className="input">
               <input
                 type="email"
-                placeholder="johndoe@gmail.com"
+                placeholder="Enter your mail id ... "
                 {...register("email", { required: "Email is required" })}
               />
             </div>

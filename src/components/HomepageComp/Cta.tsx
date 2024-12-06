@@ -11,11 +11,11 @@ const Cta = () => {
         <ActualPaddedSectionStyle>
           <div className="cta">
             <SectionHead
-              bigtext="Start Your Tech Journey Today"
+              bigtext="Start Your Learning Journey Today"
               smalltext="Don’t wait till you’re sure, there’s space for everyone in tech, Join Us Today"
             />
             <div className="pad">
-              <Link href={"/courses"}>
+              <Link href={"/"}>
                 <div className="a">
                   <LinkStyle color="#fff" hovercolor="#fff">
                     View all Courses

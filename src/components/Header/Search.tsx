@@ -18,7 +18,7 @@ const Search: FunctionComponent = () => {
   const router = useRouter();
   const handleSearch = (data: ISearchProps) => {
     dispatch(setSearchQuery(data.query));
-    router.push("/courses");
+    // router.push("/courses");
     // reset();
   };
 

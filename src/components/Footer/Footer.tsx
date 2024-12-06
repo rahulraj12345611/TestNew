@@ -26,17 +26,18 @@ const Footer: FunctionComponent = () => {
           <div className="pane">
             <h4>Company</h4>
             <div className="links">
-              <Link href={"/courses"}>
+              {/* <Link href={"/courses"}> */}
+              <Link href={"/"}>
                 <FooterLinkStyle color="var(--off-white, #F9F7F7)" hovercolor="#fff">
                   Courses
                 </FooterLinkStyle>
               </Link>
-              <Link href={"/about"}>
+              <Link href={"/"}>
                 <FooterLinkStyle color="var(--off-white, #F9F7F7)" hovercolor="#fff">
                   About Us
                 </FooterLinkStyle>
               </Link>
-              <Link href={"/contact"}>
+              <Link href={"/"}>
                 <FooterLinkStyle color="var(--off-white, #F9F7F7)" hovercolor="#fff">
                   Contact Us
                 </FooterLinkStyle>
@@ -80,7 +81,7 @@ const Footer: FunctionComponent = () => {
           </div>
         </div>
         <div className="two">
-          <p>2023 Xendar Services. All Rights Reserved</p>
+          <p>2024 The Brain Connections. All Rights Reserved</p>
           <div className="flat">
             <Link href={"#"}>
               <FooterLinkStyle color="var(--off-white, #F9F7F7)" hovercolor="#fff">

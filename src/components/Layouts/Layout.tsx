@@ -17,7 +17,7 @@ const Layout: FunctionComponent<ILayout> = ({ children }) => {
       <Header />
       <Info />
       <main>
-        {children}    
+        {children}
       </main>
       <Footer />
     </LayoutStyles>

@@ -90,7 +90,7 @@ export const LogoStyle = styled.div`
   align-items: center;
   font-family: Raleway;
   font-weight: 300;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: rgba(42, 13, 68,0.75);
   strong{
     color: #7d26cd;

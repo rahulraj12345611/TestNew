@@ -77,7 +77,7 @@ export const HeroSearchStyles = styled(SearchStyle)`
 `;
 
 export const FormButton = styled.button`
-  background: var(--purple, #7d26cd);
+  background: var(--green, #50C878);
   box-shadow: 0px 4px 8px 0px rgba(125, 38, 205, 0.3);
   padding: 0.75rem 1rem;
   border-radius: 8px;
@@ -88,7 +88,7 @@ export const FormButton = styled.button`
   line-height: 1.5rem;
   width: 100%;
   &:hover {
-    background: var(--purple-600, #6820ab);
+    background: var(--green-600, #00ff00);
   }
   @media screen and (min-width: 490px) and (max-width: 768px) {
     width: auto;
@@ -104,7 +104,7 @@ export const SubscribeButton = styled(FormButton)<IContactBtn>`
   align-items: center;
   justify-content: center;
   background: ${(props) =>
-    props.$submitted ? "hsla(271, 69%, 48%,0.7)" : "var(--purple, #7d26cd)"};
+    props.$submitted ? "hsla(271, 69%, 48%,0.7)" : "var(--green, #097969)"};
   gap: 0.5rem;
   ${(props) =>
     props.$submitted &&

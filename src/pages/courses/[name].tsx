@@ -12,7 +12,7 @@ const CourseDetail = () => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Xendar | {router.query.name}</title>
+        <title>The Brain Connections | {router.query.name}</title>
       </Head>
       <CourseDetailSectionStyle>
         <DetailNavStyles>

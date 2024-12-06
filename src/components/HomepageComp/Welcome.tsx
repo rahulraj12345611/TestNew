@@ -42,14 +42,14 @@ const Welcome: FunctionComponent = () => {
                 whileInView= "final"
                 viewport={{once : true }}
                 >
-                  <h3>Welcome to Xendar’s E-learning Website</h3>
+                  <h3>Welcome to The Brain Connections E-learning Website</h3>
                   <p className="small">
-                    In Xendar, we guide you with the best available teaching and
+                    In The Brain Connections, we guide you with the best available teaching and
                     mentoring needed in your tech career and also give you the
                     necessary resources to get better.{" "}
                   </p>
                   <Link href={"/courses"}>
-                    <LinkStyle color="var(--purple, #7d26cd)">
+                    <LinkStyle color="var(--green, #50C878)">
                       Get Started
                     </LinkStyle>
                   </Link>
@@ -66,7 +66,7 @@ const Welcome: FunctionComponent = () => {
               initial = "farLeft"
               whileInView="final"
               viewport={{once : true}}
-              >Welcome to Xendar’s E-learning Website</motion.h3>
+              >Welcome to The Brain Connections’s E-learning Website</motion.h3>
               <Image
                 src="/assets/welcome-mobile.png"
                 alt="welcome"
@@ -81,7 +81,7 @@ const Welcome: FunctionComponent = () => {
               whileInView="final"
               viewport={{once : true}}
               >
-                In Xendar, we guide you with the best available teaching and
+                In The Brain Connections, we guide you with the best available teaching and
                 mentoring needed in your tech career and also give you the
                 necessary resources to get better.{" "}
               </motion.p>

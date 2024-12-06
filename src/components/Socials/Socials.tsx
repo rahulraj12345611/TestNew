@@ -20,7 +20,7 @@ const SocialsComp: FunctionComponent = () => {
               <div className="a">
                 <div className="a-link">
                   <ColorInstagram />
-                  <SocialLinkStyle color="var(--grey-500, #525252)">Xendar.ng</SocialLinkStyle>
+                  <SocialLinkStyle color="var(--grey-500, #525252)">The Brain Connections.ng</SocialLinkStyle>
                 </div>
               </div>
             </Link>
@@ -30,7 +30,7 @@ const SocialsComp: FunctionComponent = () => {
               <div className="a">
                 <div className="a-link">
                   <ColorTwitter />
-                  <SocialLinkStyle color="var(--grey-500, #525252)">XendarHQ</SocialLinkStyle>
+                  <SocialLinkStyle color="var(--grey-500, #525252)">The Brain ConnectionsHQ</SocialLinkStyle>
                 </div>
               </div>
             </Link>

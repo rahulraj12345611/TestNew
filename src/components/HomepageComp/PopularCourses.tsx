@@ -17,6 +17,9 @@ const PopularCourses = () => {
   const { filtersByTime, filteredByTimeCourses, allCourses } = useAppSelector(
     (state: RootState) => state.data
   );
+
+  console.log(filtersByTime, filteredByTimeCourses, allCourses, 'filtersByTime, filteredByTimeCourses, allCourses,,')
+
   const dispatch = useAppDispatch();
   useEffect(() => {
     dispatch(setFilteredByTimeCourses());
@@ -62,9 +65,10 @@ const PopularCourses = () => {
       </div>
       <CenterItemStyle>
         <div className="pad">
-          <Link href={"/courses"}>
+          {/* <Link href={"/courses"}> */}
+          <Link href={"#"}>
             <div className="a">
-              <LinkStyle color="var(--purple, #7d26cd)">
+              <LinkStyle color="var(--green, #097969)">
                 View all Courses
               </LinkStyle>
             </div>

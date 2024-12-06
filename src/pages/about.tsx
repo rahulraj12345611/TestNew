@@ -10,7 +10,7 @@ const About: FunctionComponent = () => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Xendar | About</title>
+        <title>The Brain Connections | About</title>
       </Head>
       <AboutHero />
       <Chooseus />

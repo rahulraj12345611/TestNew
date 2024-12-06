@@ -9,7 +9,7 @@ const Contact: FunctionComponent = () => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Xendar | Contact</title>
+        <title>The Brain Connections | Contact</title>
       </Head>
       <ContactComp />
       <ReachOut />

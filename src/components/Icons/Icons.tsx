@@ -28,12 +28,15 @@ import React, { FunctionComponent, ReactNode } from "react";
 import { motion } from "framer-motion";
 import { XtraSmall } from "@/styles/SectionHeadStyles/Small";
 import { SmallsvgStyles } from "@/styles/ContactpageStyles/Contact";
+import Image from "next/image";
 
 export const Logo = () => {
   return (
     <LogoStyle>
       <h2>
-        <strong>X</strong>endar
+        {/* <strong>X</strong>endar */}
+
+        <strong>The </strong> Brain connections
       </h2>
     </LogoStyle>
   );
@@ -42,7 +45,7 @@ export const FooterLogo = () => {
   return (
     <FooterLogoStyle>
       <h2>
-        <strong>X</strong>endar
+        <strong>T</strong>Brain Connections
       </h2>
     </FooterLogoStyle>
   );
@@ -1103,7 +1106,7 @@ export const Union = () => {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M9.99922 5.50742C9.99922 7.83844 8.40381 9.79683 6.24536 10.3502V13.3371C6.99541 13.7685 7.50045 14.5779 7.50045 15.5053C7.50045 16.8858 6.38135 18.0049 5.00088 18.0049C3.62041 18.0049 2.50132 16.8858 2.50132 15.5053C2.50132 14.5823 3.0016 13.7762 3.7458 13.3432V10.3479C1.59194 9.79136 0.000976562 7.83519 0.000976562 5.50742C0.000976562 2.74648 2.23916 0.508301 5.0001 0.508301C7.76104 0.508301 9.99922 2.74648 9.99922 5.50742Z"
-        fill="#7D26CD"
+        fill="#008000"
       />
     </svg>
   );
