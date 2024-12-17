@@ -11,13 +11,13 @@ export interface ILinkB {
 
 export const PageLinkStyle = styled.p<ILink>`
   color: ${(props) =>
-    props.$ispageactive ? "var(--purple, #7d26cd)" : props.color};
+    props.$ispageactive ? "var(--purple, #228B22)" : props.color};
   font-size: 0.875rem;
   font-family: DM Sans;
   font-weight: 600;
   line-height: 1.5rem;
   &:hover {
-    color: var(--purple-600, #6820ab);
+    color: var(--green-600, #228B22);
   }
   @media screen and (min-width: 728px) {
     font-weight: 700;
@@ -27,8 +27,8 @@ export const PageLinkStyle = styled.p<ILink>`
     ${(props) =>
       props.$ispageactive &&
       css`
-        color: var(--purple, #7d26cd);
-        border-bottom: 4px solid #7d26cd;
+        color: var(--green, #228B22);
+        border-bottom: 4px solid #228B22;
       `};
   }
 `;

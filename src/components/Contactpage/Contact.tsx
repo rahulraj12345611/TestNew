@@ -43,15 +43,15 @@ export const ContactComp: FunctionComponent = () => {
   const [isContactFormSubmitted, setIsContactFormSubmitted] = useState(false);
   const dispatch = useAppDispatch();
   const handleContactForm = (data: IContactForm) => {
-    reset();
-    dispatch(setContactForm(data));
-    setIsContactFormSubmitted(true);
+    // reset();
+    // dispatch(setContactForm(data));
+    // setIsContactFormSubmitted(true);
   };
   return (
     <ContactStyles>
       <SectionHead
-        bigtext="Send Us A Message"
-        smalltext="Feel free to send us a direct message from our website. We’ll respond to you as fast as we can."
+        bigtext="Contact With Us"
+        smalltext="👋 We're thrilled to have you on The Brain Connection! If you have any questions or feedback, we're all ears! Your thoughts are important to us!"
       />
       <ActualPaddedSectionStyle>
         <div className="main">
@@ -85,7 +85,7 @@ export const ContactComp: FunctionComponent = () => {
                   <input
                     type="text"
                     id=""
-                    placeholder="John Doe"
+                    placeholder="Name..."
                     {...register("name", { required: "Name is required" })}
                   />
                 </InputStyles>
@@ -99,7 +99,7 @@ export const ContactComp: FunctionComponent = () => {
                   <input
                     type="email"
                     id=""
-                    placeholder="johndoe@gmail.com"
+                    placeholder="Email..."
                     {...register("email", { required: "Email is required" })}
                   />
                 </InputStyles>
@@ -115,7 +115,7 @@ export const ContactComp: FunctionComponent = () => {
                   <input
                     type="text"
                     id=""
-                    placeholder="Request for Physical classes"
+                    placeholder="Subject"
                     {...register("subject", {
                       required: "Subject is required",
                     })}

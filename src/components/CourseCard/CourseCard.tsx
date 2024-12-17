@@ -96,8 +96,8 @@
     const router = useRouter();
     const showDetail = () => {
       // omor this worked like magic: for escaping symbols in urls
-      // const path = "/courses/" + encodeURIComponent(name);
-      const path = "/";
+      const path = "/courses/" + encodeURIComponent(name);
+      // const path = "/";
       // push the id
       router.push({
         pathname : path,
@@ -114,8 +114,8 @@
           <TabOnly>
             <Image
               alt={name}
-              // src={img}
-              src="https://img.freepik.com/free-photo/pleased-middle-aged-male-teacher-wearing-glasses-standing-front-blackboard-looking-camera-with-magnifier_141793-105391.jpg?uid=R173935929&ga=GA1.1.295393558.1731326796&semt=ais_hybrid"
+              src={img}
+              // src="https://img.freepik.com/free-photo/pleased-middle-aged-male-teacher-wearing-glasses-standing-front-blackboard-looking-camera-with-magnifier_141793-105391.jpg?uid=R173935929&ga=GA1.1.295393558.1731326796&semt=ais_hybrid"
               width={340}
               height={226}
               className="desktop img"

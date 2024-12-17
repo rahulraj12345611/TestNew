@@ -58,7 +58,7 @@ const CourseCatalog: FunctionComponent = () => {
         {lengthOfList > 0 && (
           <p>
             There {lengthOfList > 1 ? "are " : "is "}
-            <strong>
+            <strong style={{color: "green"}}>
               {lengthOfList > 0 && lengthOfList}{" "}
               {lengthOfList > 1 ? "courses " : "course "}
             </strong>{" "}

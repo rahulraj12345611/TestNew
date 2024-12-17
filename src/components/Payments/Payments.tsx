@@ -639,7 +639,7 @@ export const PaymentForm: FunctionComponent = ({}) => {
                         {plan?.isInstallmental && plan.installmentalPrice && (
                           <>
                             <h4>
-                              &#8358;
+                              ₹
                               {convertToNaira(
                                 plan.installmentalPrice
                               ).toLocaleString()}
@@ -654,7 +654,7 @@ export const PaymentForm: FunctionComponent = ({}) => {
                         {!plan?.isInstallmental && plan?.price && (
                           <>
                             <h4>
-                              &#8358;
+                              ₹
                               {convertToNaira(plan.price).toLocaleString()}
                             </h4>
                             <div className="section-name">
@@ -749,7 +749,7 @@ export const Plan: FunctionComponent<IPlanFC> = ({
               color="var(--grey-500, #525252)"
               fontWeight={700}
             >
-              &#8358; {convertToNaira(installmentalPrice).toLocaleString()}
+              ₹ {convertToNaira(installmentalPrice).toLocaleString()}
               /month
             </DetailSmallStyles>
           ) : (
@@ -760,7 +760,7 @@ export const Plan: FunctionComponent<IPlanFC> = ({
               color="var(--grey-500, #525252)"
               fontWeight={700}
             >
-              &#8358; {convertToNaira(price).toLocaleString()}
+              ₹ {convertToNaira(price).toLocaleString()}
             </DetailSmallStyles>
           ) : (
             <></>
@@ -770,7 +770,7 @@ export const Plan: FunctionComponent<IPlanFC> = ({
               color="var(--grey-500, #525252)"
               fontWeight={700}
             >
-              &#8358; 0
+              ₹ 0
             </DetailSmallStyles>
           )}
           {isInstallmental && installmentalPrice && (

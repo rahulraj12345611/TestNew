@@ -79,7 +79,7 @@ export const ContactSvgStyle = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 4rem;
-  background: var(--purple-100, #e5d4f5);
+  background: var(--purple-100, #C1E1C1);
 `;
 
 export const LogoStyle = styled.div`

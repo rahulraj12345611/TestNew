@@ -429,7 +429,7 @@ export const OverviewStyles = styled(motion.div).attrs(() => ({
       display: flex;
       flex-wrap: wrap;
       row-gap: 0.75rem;
-      color: #747474;
+      color: #009E60;
     }
     .skills .li {
       width: 50%;
@@ -628,7 +628,7 @@ export interface IDetailNavSwitch {
 }
 export const DetailNavSwitchStyles = styled.button<IDetailNavSwitch>`
   color: ${(props) =>
-    props.$isSelected ? "var(--purple, #7d26cd)" : "var(--grey-400, #747474)"};
+    props.$isSelected ? "var(--purple, #009E60)" : "var(--grey-400, #747474)"};
   background: transparent;
   position: relative;
   font-size: 1rem;
@@ -643,7 +643,7 @@ export const DetailNavSwitchStyles = styled.button<IDetailNavSwitch>`
   border-bottom: 2px solid #eeeeee;
   .underline{
     height: 0.25rem;
-    background: #7D26CD;
+    background: #009E60;
     width: 100%;
     position: absolute;
     bottom: -1px;

@@ -114,7 +114,8 @@ export const CourseDetailComp = () => {
         <ImprovedDesktopMobile>
           <CourseDetailCompStyles>
             <MainCardStyles>
-              <VideoComp url={course.introVideo} />
+              {/* <VideoComp url={course.introVideo} /> */}
+              <VideoComp url={"https://www.youtube.com/watch?v=TDyasK6tOKE"} />
               <div className="name">
                 <DetailH3Styles>{course.name}</DetailH3Styles>
                 <div className="mobile emojix">
@@ -187,16 +188,16 @@ export const CourseDetailComp = () => {
                     {!userCourse?.isPaid && (
                       <>
                         <div className="discount">
-                          <RegularSmallStyles color="#525252">
+                          {/* <RegularSmallStyles color="#525252">
                             Got a discount code, click{" "}
                             <Link href="#" className="link">
                               here
                             </Link>
-                          </RegularSmallStyles>
+                          </RegularSmallStyles> */}
                         </div>
                         <div className="prices">
                           <h6>
-                            &#8358;
+                            ₹
                             {course.nairaPrice === null
                               ? convertToNaira(
                                   course.dollarPrice
@@ -241,15 +242,15 @@ export const CourseDetailComp = () => {
                     <>
                       <div className="discount">
                         <RegularSmallStyles color="#525252">
-                          Got a discount code, click{" "}
+                          {/* Got a discount code, click{" "}
                           <Link href="#" className="link">
                             here
-                          </Link>
+                          </Link> */}
                         </RegularSmallStyles>
                       </div>
                       <div className="prices">
                         <h6>
-                          &#8358;
+                          ₹
                           {course.nairaPrice === null
                             ? convertToNaira(
                                 course.dollarPrice
@@ -494,20 +495,20 @@ export const SideCard: FunctionComponent<ISideCard> = ({
         <>
           <div className="discount">
             <RegularSmallStyles color="#525252">
-              Got a discount code, click{" "}
+              {/* Got a discount code, click{" "}
               <Link href="#" className="link">
                 here
-              </Link>
+              </Link> */}
             </RegularSmallStyles>
           </div>
           <div className="prices">
             <h6>
-              &#8358;
+              ₹
               {nairaPrice === null
                 ? convertToNaira(dollarPrice).toLocaleString()
                 : nairaPrice.toLocaleString()}
             </h6>
-            <DetailSmallStyles>approx ${dollarPrice}</DetailSmallStyles>
+            {/* <DetailSmallStyles>approx ${dollarPrice}</DetailSmallStyles> */}
           </div>
         </>
       )}
@@ -516,9 +517,9 @@ export const SideCard: FunctionComponent<ISideCard> = ({
           onClick={() => handleMakePayments(true)}
           disabled={userCourse?.isPaid}
         >
-          {userCourse?.isPaid ? <>Enrolled</> : <>Enroll Now</>}
+          {userCourse?.isPaid ? <>Enrolled</> : <>Get Study Materials</>}
         </FormBtnStyles>
-        {!userCourse?.isPaid && (
+        {/* {!userCourse?.isPaid && (
           <>
             <BoldXtraSmallStyles color="var(--grey-700, #272727)">
               Or
@@ -534,7 +535,7 @@ export const SideCard: FunctionComponent<ISideCard> = ({
               )}
             </TransparentFormBtnStyles>
           </>
-        )}
+        )} */}
       </div>
     </SideCardStyles>
   );
@@ -584,6 +585,7 @@ export const Overview: FunctionComponent<IOverview> = ({ about, skills }) => {
           <div className="under">
             <DetailSmallStyles color="var(--grey-400, #747474)">
               {about}
+              {/* Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. */}
             </DetailSmallStyles>
           </div>
         </div>

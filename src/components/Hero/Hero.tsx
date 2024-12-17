@@ -22,10 +22,10 @@ const Hero: FunctionComponent = () => {
             your career in <strong style={{"color": "green"}}>Learning</strong>
           </h1>
           <p className="hero-p">
-            The Brain Connections is an inclusive E-Learning platform that specializes in helping
-            people kickstart their journey into the evolving world of technology
+          At The Brain Connections, we offer specialized courses designed to enhance cognitive skills and academic performance. 
+          we provide a holistic approach to learning that empowers students of all ages to reach their full potential.
           </p>
-          <HeroSearch />
+          {/* <HeroSearch /> */}
           <div className="alink">
             {/* <Link href={"/courses"}> */}
             <Link href={"/"}>
@@ -39,7 +39,6 @@ const Hero: FunctionComponent = () => {
           <TabOnly>
             <Image
               alt="hero img"
-              // src="/assets/hero.png"
               src="https://img.freepik.com/free-photo/boy-with-glasses-man-writing-classroom_1150-24966.jpg?uid=R173935929&ga=GA1.1.295393558.1731326796&semt=ais_hybrid"
               width={700}
               height={500}
@@ -49,7 +48,6 @@ const Hero: FunctionComponent = () => {
             <Image
               alt="hero img"
               src="https://img.freepik.com/free-photo/boy-with-glasses-man-writing-classroom_1150-24966.jpg?uid=R173935929&ga=GA1.1.295393558.1731326796&semt=ais_hybrid"
-              // src="/assets/hero_mobile.png"
               width={400}
               height={300}
               className="tab"
@@ -58,7 +56,6 @@ const Hero: FunctionComponent = () => {
             <Image
               alt="hero img"
               src="https://img.freepik.com/free-photo/boy-with-glasses-man-writing-classroom_1150-24966.jpg?uid=R173935929&ga=GA1.1.295393558.1731326796&semt=ais_hybrid"
-              // src="/assets/hero_mobile.png"
               width={0}
               height={0}
               sizes="100vw"

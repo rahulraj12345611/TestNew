@@ -213,7 +213,7 @@ export const FormBtnStyles = styled.button`
   align-items: center;
   display: flex;
   border-radius: 0.5rem;
-  background: ${(props )=> props.disabled ? "hsla(271, 69%, 48%,0.7)": "var(--purple, #7d26cd)" };
+  background: ${(props )=> props.disabled ? "hsla(271, 69%, 48%,0.7)": "var(--purple, #009E60)" };
   box-shadow: 0px 4px 8px 0px rgba(125, 38, 205, 0.3);
   color: var(--off-white, #fefefe);
   font-size: 1rem;
@@ -232,7 +232,7 @@ export interface IContactBtn {
 }
 export const ContactPageBtnStyles = styled(FormBtnStyles)<IContactBtn>`
   background: ${(props) =>
-    props.$submitted ? "hsla(271, 69%, 48%,0.7)" : "var(--purple, #7d26cd)"};
+    props.$submitted ? "hsla(271, 69%, 48%,0.7)" : "var(--purple, #009E60)"};
   gap: 0.5rem;
   ${(props) =>
     props.$submitted &&

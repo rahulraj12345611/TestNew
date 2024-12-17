@@ -18,9 +18,9 @@ const Footer: FunctionComponent = () => {
             </Link>
             <div className="socials">
               <Linkedin />
-              <Facebook />
+              {/* <Facebook /> */}
               <Instagram />
-              <Twitter />
+              <Twitter /> 
             </div>
           </div>
           <div className="pane">

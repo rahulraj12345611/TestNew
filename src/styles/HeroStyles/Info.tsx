@@ -5,7 +5,7 @@ import { wishlistvariants } from "@/Animations/LandingPageVariants";
 import { IButton } from "../ButtonStyles/ButtonGroup";
 
 export const InfoStyles = styled.div`
-  background: var(--purple-900, #2a0d44);
+  background: var(--purple-900, #228B22);
   padding: 0.5rem;
   justify-content: center;
   align-items: center;
@@ -90,8 +90,8 @@ export const Addtowishlist = styled.button`
   height: 30px;
   width: 100%;
   border-radius: 4px;
-  border: 1px solid var(--purple, #7d26cd);
-  color: var(--purple, #7d26cd);
+  border: 1px solid var(--purple, #009E60);
+  color: var(--purple, #009E60);
   font-size: 0.75rem;
   font-family: DM Sans;
   font-weight: 700;

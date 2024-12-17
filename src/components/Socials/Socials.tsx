@@ -3,7 +3,7 @@ import { FunctionComponent } from "react";
 import SectionHead from "../SectionHead/SectionHead";
 import Link from "next/link";
 import { SocialLinkStyle } from "@/styles/LinkStyles/Link";
-import { ColorInstagram, ColorTwitter } from "../Icons/Icons";
+import { ColorInstagram, ColorTwitter, ColorYoutube } from "../Icons/Icons";
 import { SocialsCompStyles } from "@/styles/AboutpageStyles/Aboutpage";
 
 const SocialsComp: FunctionComponent = () => {
@@ -16,21 +16,31 @@ const SocialsComp: FunctionComponent = () => {
         />
         <div className="s-media">
           <div className="pad">
-            <Link href={"#"}>
+            <Link href={"https://www.instagram.com/vineetaagupta08/"} target="_blank">
               <div className="a">
                 <div className="a-link">
                   <ColorInstagram />
-                  <SocialLinkStyle color="var(--grey-500, #525252)">The Brain Connections.ng</SocialLinkStyle>
+                  <SocialLinkStyle color="var(--grey-500, #525252)">The Brain Connections</SocialLinkStyle>
                 </div>
               </div>
             </Link>
           </div>
           <div className="pad">
-            <Link href={"#"}>
+            <Link href={"https://www.linkedin.com/in/vineeta-gupta-25b91916a"}>
               <div className="a">
                 <div className="a-link">
                   <ColorTwitter />
-                  <SocialLinkStyle color="var(--grey-500, #525252)">The Brain ConnectionsHQ</SocialLinkStyle>
+                  <SocialLinkStyle color="var(--grey-500, #525252)">The Brain Connections</SocialLinkStyle>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="pad">
+            <Link href={"https://www.linkedin.com/in/vineeta-gupta-25b91916a"}>
+              <div className="a">
+                <div className="a-link">
+                  <ColorYoutube />
+                  <SocialLinkStyle color="var(--grey-500, #525252)">The Brain Connections</SocialLinkStyle>
                 </div>
               </div>
             </Link>

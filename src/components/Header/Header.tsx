@@ -39,7 +39,7 @@ const Header: FunctionComponent = () => {
         </Link>
       </div>
       <div className="desktop desktop-nav-links">
-        <Link href={"/"}>
+        <Link href={"/courses"}>
           <PageLinkStyle
             color="var(--grey-500, #525252)"
             $ispageactive={router.pathname === "/courses"}
@@ -47,7 +47,7 @@ const Header: FunctionComponent = () => {
             Course
           </PageLinkStyle>
         </Link>
-        <Link href={"/"}>
+        <Link href={"/about"}>
           <PageLinkStyle
             color="var(--grey-500, #525252)"
             $ispageactive={router.pathname === "/about"}
@@ -55,7 +55,7 @@ const Header: FunctionComponent = () => {
             About Us
           </PageLinkStyle>
         </Link>
-        <Link href={"/"}>
+        <Link href={"/contact"}>
           <PageLinkStyle
             color="var(--grey-500, #525252)"
             $ispageactive={router.pathname === "/contact"}
