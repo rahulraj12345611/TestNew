@@ -47,14 +47,14 @@ const Header: FunctionComponent = () => {
             Course
           </PageLinkStyle>
         </Link>
-        <Link href={"/about"}>
+        {/* <Link href={"/"}>
           <PageLinkStyle
             color="var(--grey-500, #525252)"
             $ispageactive={router.pathname === "/about"}
           >
             About Us
           </PageLinkStyle>
-        </Link>
+        </Link> */}
         <Link href={"/contact"}>
           <PageLinkStyle
             color="var(--grey-500, #525252)"
