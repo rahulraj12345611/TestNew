@@ -105,7 +105,7 @@ export const CourseDetailComp = () => {
     (ele) => ele.courseId === course?.id
   );
   const handleClickTryFree = (value: boolean) => {
-    dispatch(setShowTryFreeModaL(value));
+    // dispatch(setShowTryFreeModaL(value));
   };
 
   return (
