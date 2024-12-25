@@ -18,7 +18,7 @@ const PopularCourses = () => {
     (state: RootState) => state.data
   );
 
-  console.log(filtersByTime, filteredByTimeCourses, allCourses, 'filtersByTime, filteredByTimeCourses, allCourses,,')
+  // console.log(filtersByTime, filteredByTimeCourses, allCourses, 'filtersByTime, filteredByTimeCourses, allCourses,,')
 
   const dispatch = useAppDispatch();
   useEffect(() => {

@@ -22,7 +22,7 @@ const Hero: FunctionComponent = () => {
             your career in <strong style={{"color": "green"}}>Learning</strong>
           </h1>
           <p className="hero-p">
-          Unlock your child's full potential with our scientifically designed brain development courses.
+          Unlock your child&apos;s full potential with our scientifically designed brain development courses.
           At The Brain Connections, we believe every child has limitless potential waiting to be tapped.
           Our engaging and innovative programs nurture cognitive growth, enhance problem-solving skills, and foster creativity.
           </p>
