@@ -8,7 +8,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Hero: FunctionComponent = () => {
   const [text] = useTypewriter({
-    words: [` Child\'s`],
+    words: [`Today!`],
     loop: true,
     typeSpeed: 100,
     delaySpeed: 4800,
@@ -18,9 +18,9 @@ const Hero: FunctionComponent = () => {
       <HeroStyles>
         <div className="hero-text">
           <h1>
-            Unlock your 
-          <strong style={{"color": "green"}}>{text} <span><Cursor cursorColor="#228B22" /></span></strong> <br />
-            Potential <strong style={{"color": "green"}}> Today!</strong>
+            Unlock your Child&apos;s
+           <br />
+            Potential <strong style={{"color": "green"}}>{text} <span><Cursor cursorColor="#228B22" /></span></strong>
           </h1>
           <p className="hero-p">
           Unlock your childs full potential with our scientifically designed brain development courses.
