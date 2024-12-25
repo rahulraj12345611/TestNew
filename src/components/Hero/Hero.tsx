@@ -8,7 +8,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Hero: FunctionComponent = () => {
   const [text] = useTypewriter({
-    words: [" Child's"],
+    words: [` Child\'s`],
     loop: true,
     typeSpeed: 100,
     delaySpeed: 4800,
