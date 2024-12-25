@@ -31,7 +31,7 @@ export const AboutHero: FunctionComponent = () => {
           <div className="main">
             <div className="hero-text">
               <h1>
-                Welcome to <strong>The Brain Connections’s</strong> E-learning Website
+                Welcome to <strong>The Brain Connections’s !</strong> 
               </h1>
               <p className="desktop hero-p">
                 In The Brain Connections, we guide you with the best available teaching and
@@ -41,7 +41,7 @@ export const AboutHero: FunctionComponent = () => {
               <div className="desktop">
                 <div className="action">
                   <Link href={"/courses"}>
-                    <LinkStyle color="var(--purple, #7d26cd)">
+                    <LinkStyle color="var(--purple, #228B22)">
                       View Our Courses
                     </LinkStyle>
                   </Link>
@@ -85,7 +85,7 @@ export const AboutHero: FunctionComponent = () => {
             <div className="mobile">
               <div className="action">
                 <Link href={"/courses"}>
-                  <LinkStyle color="var(--purple, #7d26cd)">
+                  <LinkStyle color="var(--purple, #228B22)">
                     View Our Courses
                   </LinkStyle>
                 </Link>

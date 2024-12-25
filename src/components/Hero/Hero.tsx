@@ -22,8 +22,7 @@ const Hero: FunctionComponent = () => {
             your career in <strong style={{"color": "green"}}>Learning</strong>
           </h1>
           <p className="hero-p">
-          At The Brain Connections, we offer specialized courses designed to enhance cognitive skills and academic performance. 
-          we provide a holistic approach to learning that empowers students of all ages to reach their full potential.
+          Unlock your child's full potential with our scientifically designed brain development courses. At The Brain Connections, we believe every child has limitless potential waiting to be tapped. Our engaging and innovative programs nurture cognitive growth, enhance problem-solving skills, and foster creativity.
           </p>
           {/* <HeroSearch /> */}
           <div className="alink">
@@ -39,25 +38,29 @@ const Hero: FunctionComponent = () => {
           <TabOnly>
             <Image
               alt="hero img"
-              src="https://img.freepik.com/free-photo/boy-with-glasses-man-writing-classroom_1150-24966.jpg?uid=R173935929&ga=GA1.1.295393558.1731326796&semt=ais_hybrid"
-              width={700}
-              height={500}
+              src="/brain/brain_welcome.jpg"
+              // src="https://img.freepik.com/free-photo/boy-with-glasses-man-writing-classroom_1150-24966.jpg?uid=R173935929&ga=GA1.1.295393558.1731326796&semt=ais_hybrid"
+              width={100}
+              height={100}
               sizes="100%"
+              // className="h-1/2 w-1/2"
               className="desktop"
             />
             <Image
               alt="hero img"
-              src="https://img.freepik.com/free-photo/boy-with-glasses-man-writing-classroom_1150-24966.jpg?uid=R173935929&ga=GA1.1.295393558.1731326796&semt=ais_hybrid"
-              width={400}
-              height={300}
+              src="/brain/brain1.jpg"
+              // src="https://img.freepik.com/free-photo/boy-with-glasses-man-writing-classroom_1150-24966.jpg?uid=R173935929&ga=GA1.1.295393558.1731326796&semt=ais_hybrid"
+              width={100}
+              height={100}
               className="tab"
               sizes="100%"
             />
             <Image
               alt="hero img"
-              src="https://img.freepik.com/free-photo/boy-with-glasses-man-writing-classroom_1150-24966.jpg?uid=R173935929&ga=GA1.1.295393558.1731326796&semt=ais_hybrid"
-              width={0}
-              height={0}
+              src="/brain/brain1.jpg"
+              // src="https://img.freepik.com/free-photo/boy-with-glasses-man-writing-classroom_1150-24966.jpg?uid=R173935929&ga=GA1.1.295393558.1731326796&semt=ais_hybrid"
+              width={100}
+              height={100}
               sizes="100vw"
               priority={true}               
               className="mobile mobile-img"

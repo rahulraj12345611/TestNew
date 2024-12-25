@@ -218,7 +218,7 @@ export const TestimonyStyles = styled.div<ITestimonyStyle>`
     props.$isActive &&
     css`
       .comment {
-        background: var(--purple, #7d26cd);
+        background: var(--purple, #228B22);
       }
       .comment p {
         color: var(--off-white, #fefefe);
@@ -291,7 +291,7 @@ export const CtaStyles = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    background: var(--purple, #7d26cd);
+    background: var(--purple, #228B22);
     box-shadow: 0px 4px 8px 0px rgba(125, 38, 205, 0.3);
     width: 100%;
   }

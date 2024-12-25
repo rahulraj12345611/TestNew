@@ -311,7 +311,7 @@ export const SideCardStyles = styled.div<ISideCardStyle>`
     border-radius: 1rem;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
     .link {
-      color: var(--purple, #7d26cd);
+      color: var(--purple, #228B22);
       text-decoration: underline;
     }
     .link:hover {
@@ -557,7 +557,7 @@ interface ITutorHeadStyle {
   fontWeight?: number;
 }
 export const TutorHeadStyle = styled.h5<ITutorHeadStyle>`
-  color: ${(props) => (props.color ? props.color : "var(--grey-700, #272727)")};
+  color: ${(props) => (props.color ? props.color : "var(--grey-700, #228B22)")};
   font-family: DM Sans;
   font-size: ${(props) => (props.fontSize ? props.fontSize : "1rem")};
   font-style: normal;

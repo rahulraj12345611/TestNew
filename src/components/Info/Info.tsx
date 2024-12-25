@@ -13,8 +13,8 @@ const Info: FunctionComponent = () => {
   return (
     <InfoStyles>
       {/* <h3>80% discount on all courses when you use a discount code.</h3> */}
-      <h3>Let’s help you Start |
-      your career in Learning</h3>
+      <h3>
+      Welcome to The Brain Connections!</h3>
       <div className="mobile">
         <AnimatePresence>{isNavOpen && <MobileNav />}</AnimatePresence>
       </div>

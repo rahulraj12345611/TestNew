@@ -169,8 +169,10 @@
             <hr />
             <div className="content-inner">
               <div className="prices">
-                <h4>₹ {nairaPrice?.toLocaleString()}</h4>
-                <span>${dollarPrice}</span>
+                {/* <h4>₹ {nairaPrice?.toLocaleString()}</h4>
+                <span>₹dollarPrice}</span> */}
+                {/* <h4>Share</h4> */}
+                <h4>Share</h4>
               </div>
               <FavEmojiButton
                 isLoved={isLoved}

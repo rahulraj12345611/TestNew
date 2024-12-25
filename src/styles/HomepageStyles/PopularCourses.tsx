@@ -19,7 +19,7 @@ export const PopularCoursesStyles = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    border: 0.1px solid var(--purple, #7d26cd);
+    border: 0.1px solid var(--purple, #228B22);
     background: var(--white, #fff);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     width: 100%;

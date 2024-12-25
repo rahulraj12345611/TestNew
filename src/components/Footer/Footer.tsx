@@ -47,11 +47,11 @@ const Footer: FunctionComponent = () => {
           <div className="pane">
             <h4>Community</h4> 
             <div className="links">
-              <Link href={"#"}>
+              {/* <Link href={"#"}>
                 <FooterLinkStyle color="var(--off-white, #F9F7F7)" hovercolor="#fff">
                   Scholarships
                 </FooterLinkStyle>
-              </Link>
+              </Link> */}
               <Link href={"#"}>
                 <FooterLinkStyle color="var(--off-white, #F9F7F7)" hovercolor="#fff">
                   Refer a Friend
@@ -59,7 +59,7 @@ const Footer: FunctionComponent = () => {
               </Link>
               <Link href={"#"}>
                 <FooterLinkStyle color="var(--off-white, #F9F7F7)" hovercolor="#fff">
-                  Free Classes
+                  Trail Classes
                 </FooterLinkStyle>
               </Link>
             </div>

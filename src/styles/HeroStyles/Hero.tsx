@@ -15,7 +15,7 @@ export const HeroStyles = styled.div`
   }
 
   h1 strong {
-    color: var(--purple, #7d26cd);
+    color: var(--purple, #228B22);
     width: 200px;
   }
   strong span{
@@ -70,7 +70,7 @@ export const HeroStyles = styled.div`
   }
   @media screen and (min-width: 998px) {
     .hero-text {
-      padding: 4.5rem;
+      margin-left: 4.5rem;
     }
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr));
@@ -78,9 +78,8 @@ export const HeroStyles = styled.div`
       width: auto;
     }
     img{
-      width: 100%;
-      object-fit: cover;
-      height :100%;
+      width: 70%;
+      height: 100%;
     }
     flex-direction: row;
     h1 {

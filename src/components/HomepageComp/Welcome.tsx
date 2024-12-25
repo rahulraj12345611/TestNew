@@ -18,7 +18,7 @@ const Welcome: FunctionComponent = () => {
               <div className="one img-cont">
                 <TabOnly>
                   <Image
-                    src="/assets/welcome.png"
+                    src="/brain/brain1.jpg"
                     alt="welcome"
                     width={475.544}
                     height={369.739}
@@ -26,7 +26,7 @@ const Welcome: FunctionComponent = () => {
                     sizes="100%"
                   />
                   <Image
-                    src="/assets/welcome.png"
+                    src="/brain/brain_welcome.jpg"
                     alt="welcome"
                     width={380}
                     height={300}
@@ -42,7 +42,7 @@ const Welcome: FunctionComponent = () => {
                 whileInView= "final"
                 viewport={{once : true }}
                 >
-                  <h3>Welcome to The Brain Connections E-learning Website</h3>
+                  <h3>Welcome to The Brain Connections!</h3>
                   <p className="small">
                     In The Brain Connections, we guide you with the best available teaching and
                     mentoring needed in your tech career and also give you the
@@ -86,7 +86,7 @@ const Welcome: FunctionComponent = () => {
                 necessary resources to get better.{" "}
               </motion.p>
               <Link href={"/courses"}>
-                <LinkStyle color="var(--purple, #7d26cd)">
+                <LinkStyle color="var(--purple, #228B22)">
                   Get Started
                 </LinkStyle>
               </Link>

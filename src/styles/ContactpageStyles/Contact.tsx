@@ -213,7 +213,7 @@ export const FormBtnStyles = styled.button`
   align-items: center;
   display: flex;
   border-radius: 0.5rem;
-  background: ${(props )=> props.disabled ? "hsla(271, 69%, 48%,0.7)": "var(--purple, #009E60)" };
+  background: ${(props )=> props.disabled ? "hsla(271, 69%, 48%,0.7)": "var(--green, #009E60)" };
   box-shadow: 0px 4px 8px 0px rgba(125, 38, 205, 0.3);
   color: var(--off-white, #fefefe);
   font-size: 1rem;
@@ -223,7 +223,7 @@ export const FormBtnStyles = styled.button`
   line-height: 1.5rem;
   width: 100%;
   &:hover {
-    background: var(--purple-600, #6820ab);
+    background: var(--purple-600, #228B22);
   }
 `;
 

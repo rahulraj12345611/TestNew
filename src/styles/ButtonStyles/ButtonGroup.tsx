@@ -65,7 +65,7 @@ export const CancelSearchBtnStyles = styled.button<IButton>`
 
 export const ContactBtnStyles = styled.button<IButton>`
   display: flex;
-  color: var(--purple, #7d26cd);
+  color: var(--purple, #228B22);
   font-size: 1rem;
   font-family: DM Sans;
   font-style: normal;
@@ -82,7 +82,7 @@ export const TransparentFormBtnStyles = styled.button`
   border-radius: 0.5rem;
   background: #fff;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
-  color: var(--purple, #7d26cd);
+  color: var(--purple, #228B22);
   font-size: 1rem;
   font-family: DM Sans;
   font-style: normal;

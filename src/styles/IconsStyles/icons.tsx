@@ -83,7 +83,7 @@ export const ContactSvgStyle = styled.div`
 `;
 
 export const LogoStyle = styled.div`
-  width: 82px;
+  width: 50px;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -92,8 +92,9 @@ export const LogoStyle = styled.div`
   font-weight: 300;
   font-size: 0.9rem;
   color: rgba(42, 13, 68,0.75);
+  margin-left: 30px;
   strong{
-    color: #7d26cd;
+    color: #228B22;
     opacity: 1;
     font-weight: 800;
     font-size: 1.8rem;
@@ -110,7 +111,7 @@ export const FooterLogoStyle = styled.div`
   font-size: 0.95rem;
   color: #F9F7F7;
   strong{
-    color: #7d26cd;
+    color: #228B22;
     opacity: 1;
     font-weight: 800;
     font-size: 1.8rem;

@@ -36,7 +36,7 @@ export const AboutHeroStyles = styled.div`
     align-items: center;
   }
   h1 strong {
-    color: var(--purple, #7d26cd);
+    color: var(--purple, #228B22);
   }
   @media screen and (min-width: 728px) {
     position: relative;

@@ -105,7 +105,7 @@ export const CourseDetailComp = () => {
     (ele) => ele.courseId === course?.id
   );
   const handleClickTryFree = (value: boolean) => {
-    // dispatch(setShowTryFreeModaL(value));
+    dispatch(setShowTryFreeModaL(value));
   };
 
   return (
@@ -461,6 +461,7 @@ export const SideCard: FunctionComponent<ISideCard> = ({
   userCourse,
 }) => {
   const [isheartHovered, setIsheartHovered] = useState(false);
+
   return (
     <SideCardStyles $isEnrollBtnDisabled={userCourse?.isPaid}>
       <Image alt={name} src={img} width={0} height={0} sizes="100vw" />
@@ -514,10 +515,10 @@ export const SideCard: FunctionComponent<ISideCard> = ({
       )}
       <div className="btns">
         <FormBtnStyles
-          onClick={() => handleMakePayments(true)}
+          // onClick={() => handleMakePayments(true)}
           disabled={userCourse?.isPaid}
         >
-          {userCourse?.isPaid ? <>Enrolled</> : <>Get Study Materials</>}
+          {userCourse?.isPaid ? <>Enrolled</> : <Link href="https://wa.me/918076291411" target="_blank"><p style={{color: "white"}}>Get Study Materials</p></Link>}
         </FormBtnStyles>
         {/* {!userCourse?.isPaid && (
           <>

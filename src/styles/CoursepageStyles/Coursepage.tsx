@@ -16,7 +16,7 @@ export const MarginStyle = styled.div`
     align-items: center;
   }
   .sh span{
-    color: var(--purple, #7d26cd);
+    color: var(--purple, #228B22);
   }
   @media screen and (min-width: 728px) {
     margin-top: 2rem;
@@ -38,7 +38,7 @@ export const CourseCatalogStyles = styled.div`
     line-height: 1.5rem;
   }
   .info strong {
-    color: #7d26cd;
+    color: #228B22;
   }
   .group {
     margin-top: 1rem;

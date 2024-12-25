@@ -60,14 +60,14 @@ export const ContactComp: FunctionComponent = () => {
               <TabOnly>
                 <Image
                   alt="hero img"
-                  src="/assets/contact.png"
+                  src="/brain/contact_brain.jpg"
                   width={600}
                   height={750}
                   className="desktop"
                 />
                 <Image
                   alt="hero img"
-                  src="/assets/contact.png"
+                  src="/brain/contact_brain.jpg"
                   width={390}
                   height={700}
                   className="tab"
@@ -87,6 +87,20 @@ export const ContactComp: FunctionComponent = () => {
                     id=""
                     placeholder="Name..."
                     {...register("name", { required: "Name is required" })}
+                  />
+                </InputStyles>
+                <ErrorStyles>{errors?.name && errors.name.message}</ErrorStyles>
+              </div>
+              <div className="form-ele">
+                <FormLabelStyles>
+                  <label htmlFor="name">Mobile</label>
+                </FormLabelStyles>
+                <InputStyles>
+                  <input
+                    type="text"
+                    id=""
+                    placeholder="Mobile..."
+                    {...register("name", { required: "Mobile is required" })}
                   />
                 </InputStyles>
                 <ErrorStyles>{errors?.name && errors.name.message}</ErrorStyles>

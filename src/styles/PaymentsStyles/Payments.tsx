@@ -20,7 +20,7 @@ export const StepCompStyles = styled.div<IStepStyle>`
     ${(props) =>
       props.$isSelected &&
       css`
-        background: #7d26cd;
+        background: #228B22;
       `}
   }
 `;
@@ -63,7 +63,7 @@ export const StepStyles = styled.div<IStepStyle>`
     ${(props) =>
       props.$isDoneWithOne &&
       css`
-        border: 3px solid var(--purple, #7d26cd);
+        border: 3px solid var(--purple, #228B22);
       `}
   }
 `;
@@ -227,7 +227,7 @@ export const PlanStyles = styled.div<IRadioBtnStyleProp>`
   ${(props) =>
     props.$isChecked &&
     css`
-      box-shadow: 0px 0px 1px 2px var(--purple, #7d26cd);
+      box-shadow: 0px 0px 1px 2px var(--purple, #228B22);
     `}
   display: flex;
   justify-content: space-between;
@@ -266,10 +266,10 @@ export const RadioBtnStyle = styled.div<IRadioBtnStyleProp>`
   ${(props) =>
     props.$isChecked &&
     css`
-      border: 2px solid var(--purple, #7d26cd);
+      border: 2px solid var(--purple, #228B22);
       span {
         border-radius: 50%;
-        background: var(--purple, #7d26cd);
+        background: var(--purple, #228B22);
         opacity: 1;
         transition: 0.25s;
       }
@@ -317,8 +317,8 @@ export const LoaderStyle = styled.div<ILoaderStyle>`
   border-radius: 50%;
   width: 10.03219rem;
   height: 10.03219rem;
-  border: 0.8rem solid #7d26cd;
-  border-bottom: 0.8rem solid #7d26cd;
+  border: 0.8rem solid #228B22;
+  border-bottom: 0.8rem solid #228B22;
   border-right: 0.8rem solid #e5d4f5;
   border-top: 0.8rem solid transparent;
   animation: spin 0.75s linear infinite;
@@ -361,7 +361,7 @@ export const CompletionCompStyle = styled.div`
   }
 `;
 export const PaymentLinkStyles = styled.button`
-  color: var(--purple, #7d26cd);
+  color: var(--purple, #228B22);
   text-align: center;
   font-family: DM Sans;
   font-size: 0.875rem;

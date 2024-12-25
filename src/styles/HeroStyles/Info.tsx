@@ -101,8 +101,8 @@ export const GotoCourse = styled.button`
   height: 30px;
   width: 80%;
   border-radius: 4px;
-  border: 1px solid var(--purple, #7d26cd);
-  color: var(--purple, #7d26cd);
+  border: 1px solid var(--purple, #228B22);
+  color: var(--purple, #228B22);
   font-size: 0.75rem;
   font-family: DM Sans;
   font-weight: 700;

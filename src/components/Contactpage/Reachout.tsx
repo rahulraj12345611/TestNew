@@ -83,7 +83,7 @@ export const ContactBtn: FunctionComponent<IContactCard> = ({
   };
   return (
     <ContactBtnStyles onClick={handleNav}>
-      <h5>{deet}</h5>
+      <h5 style={{color: "green"}}>{deet}</h5>
     </ContactBtnStyles>
   );
 };
