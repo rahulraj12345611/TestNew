@@ -8,7 +8,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Hero: FunctionComponent = () => {
   const [text] = useTypewriter({
-    words: ["Start", "Begin"],
+    words: [" Child's"],
     loop: true,
     typeSpeed: 100,
     delaySpeed: 4800,
@@ -18,18 +18,19 @@ const Hero: FunctionComponent = () => {
       <HeroStyles>
         <div className="hero-text">
           <h1>
-            Let’s help you <strong style={{"color": "green"}}>{text} <span><Cursor cursorColor="#228B22" /></span></strong> <br />
-            your career in <strong style={{"color": "green"}}>Learning</strong>
+            Unlock your 
+          <strong style={{"color": "green"}}>{text} <span><Cursor cursorColor="#228B22" /></span></strong> <br />
+            Potential <strong style={{"color": "green"}}> Today!</strong>
           </h1>
           <p className="hero-p">
-          Unlock your child&apos;s full potential with our scientifically designed brain development courses.
+          Unlock your childs full potential with our scientifically designed brain development courses.
           At The Brain Connections, we believe every child has limitless potential waiting to be tapped.
           Our engaging and innovative programs nurture cognitive growth, enhance problem-solving skills, and foster creativity.
           </p>
           {/* <HeroSearch /> */}
           <div className="alink">
             {/* <Link href={"/courses"}> */}
-            <Link href={"/"}>
+            <Link href={"/courses"}>
               <LinkStyle color="var(--green, #4F7942)">
                 View Our Courses
               </LinkStyle>

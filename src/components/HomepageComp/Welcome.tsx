@@ -42,7 +42,7 @@ const Welcome: FunctionComponent = () => {
                 whileInView= "final"
                 viewport={{once : true }}
                 >
-                  <h3>Welcome to The Brain Connections!</h3>
+                  <h3>Begin Your Child's Journey to Unleashing Their Full Potential Today!</h3>
                   <p className="small">
                     In The Brain Connections, we guide you with the best available teaching and
                     mentoring needed in your tech career and also give you the

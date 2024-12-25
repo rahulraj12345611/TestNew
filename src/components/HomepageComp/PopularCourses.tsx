@@ -66,7 +66,7 @@ const PopularCourses = () => {
       <CenterItemStyle>
         <div className="pad">
           {/* <Link href={"/courses"}> */}
-          <Link href={"#"}>
+          <Link href={"/courses"}>
             <div className="a">
               <LinkStyle color="var(--green, #097969)">
                 View all Courses
