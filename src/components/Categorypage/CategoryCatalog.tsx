@@ -4,7 +4,7 @@ import ButtonGroup from "../Button/ButtonGroup";
 import { useAppDispatch, useAppSelector } from "@/redux/hook";
 import { RootState } from "@/redux/store";
 import { CourseCatalogStyles } from "@/styles/CoursepageStyles/Coursepage";
-import { CourseCard, ICategory } from "../CourseCard/CourseCard";
+import {  ICategory } from "../CourseCard/CourseCard";
 import { convertToNaira } from "../Info/Wishlist";
 import {
   resetFiltersByType,
@@ -16,6 +16,7 @@ import { DetailH3Styles } from "@/styles/CoursepageStyles/CourseDetail";
 import { ErrorMsg } from "./Error";
 import { CategoryCard } from "../CategoryCard/CategoryCard";
 import * as CommonAction from "../../pages/api/actionreducer/action/Common.action";
+import CourseCard from "../CourseCard/CourseCard";
 
 const CategoryCatalog: FunctionComponent = () => {
   const {
