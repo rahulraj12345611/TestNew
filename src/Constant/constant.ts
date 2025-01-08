@@ -1,550 +1,15 @@
 import { ITeamMember } from "@/components/Aboutpage/AboutPage";
 import { IFilterButton } from "@/components/Button/FilterButton";
 import { IReachout } from "@/components/Contactpage/Reachout";
-import { ICourse } from "@/components/CourseCard/CourseCard";
+import { ICourse, ICategory } from "@/components/CourseCard/CourseCard";
 import { IReason } from "@/components/HomepageComp/Chooseus";
 import { IFaq } from "@/components/HomepageComp/Faq";
 import { ITestimony } from "@/components/HomepageComp/Testimonials";
 import { IPlan } from "@/components/Payments/Payments";
 
 export const AllCourses: ICourse[] = [
-  {
-    name: "Foundation Level ( Level 0-1)",
-    img: "/brain/abacus.jpeg",
-    dollarPrice: 245.99,
-    nairaPrice: null,
-    level: "Beginner",
-    category: "Most Popular",
-    isLoved: false,
-    rating: 4.9,
-    noEnrolled: 100,
-    field: "Abacus",
-    id: 1,
-    desc: "Abacus classes are designed to help children enhance their math skills and overall cognitive abilities. Using an abacus, students master quick and accurate arithmetic while improving concentration, memory, and problem-solving skills. These classes make learning math interactive and enjoyable, turning numbers into a game of logic and visualisation. Abacus training boosts confidence, sharpens the mind, and lays a strong foundation for lifelong learning. It is ideal for kids of all ages and nurtures a love for numbers and mental agility.",
-    skills: [
-      "Introduction to the abacus tool and its parts.",
-      "Learning basic bead movements and understanding place values.",
-      "Learning basic bead movements and understanding place values.",
-      "Suitable for beginners to build a strong foundation.",
-    ],
-    duration: 3,
-    tutors: [
-      {
-        name: "Dominic Torredo",
-        job: "Software Engineer @Altschool",
-        email: "torredo@gmail.com",
-        img: "/assets/tobi.png",
-      },
-      {
-        name: "Ekundayo Musk",
-        job: "Software Engineer @Twitter",
-        email: "elonekundayomusk@gmail.com",
-        img: "/assets/richard.png",
-      },
-    ],
-    requirements: [
-      "You don't need a background in user experience, design or coding to take this course. It is totally beginner friendly",
-      "This is an in-depth course. Most of your classes will be 2 hours, 3 times a week.",
-      "You’re required to have a laptop with a minimum of 4gb ram to take this course comfortably.",
-    ],
-    syllabus: [
-      {
-        title: "Visual Design",
-        number: 1,
-        topics: [
-          "Introduction to Design and Design Principles",
-          "Style Guides and Design Systems",
-          "Wireframing and Prototyping",
-          "Mini project",
-        ],
-      },
 
-      {
-        title: "User Research and Analysis",
-        number: 2,
-        topics: [
-          "User Research and Analysis",
-          "Style Guides and Design Systems",
-          "Wireframing and Prototyping",
-          "Mini project",
-        ],
-      },
-      {
-        title: "Web and Mobile App Design",
-        number: 3,
-        topics: [
-          "Introduction to Design and Design Principles",
-          "Style Guides and Design Systems",
-          "Wireframing and Prototyping",
-          "Mini project",
-        ],
-      },
-      {
-        title: "Project Phase ",
-        number: 4,
-        topics: [
-          "Design an nft landing page",
-          "Design an e-learning website",
-          "Redesign twitter user dashboard",
-          "Design an e-commerce website",
-        ],
-      },
-    ],
-    reviews: [
-      {
-        name: "Omotayo",
-        post: "Alumni",
-        review:
-          "This course is one of the best options you can get to begin your career journey as a UI/UX designer. I am grateful and excited that I chose this course to start with, and I would definitely recommend it to anyone. Thank you so much for putting this course together.",
-        likes: 50,
-        comments: 51,
-        img: "/assets/tayo.png",
-        daysAgo: 1,
-      },
-      {
-        name: "Tolulope",
-        post: "Student",
-        review:
-          "Extremely comprehensive course! My goal was to learn Figma, but you learn soo much more about the entire design process and even some web development basics. The instructors are doing a great job of showing their train fo thought and make it very easy to follow along with all Figma examples. Definitely worth it!",
-        likes: 70,
-        comments: 151,
-        img: "/assets/tayo.png",
-        daysAgo: 3,
-      },
-    ],
-
-    totalReviews: 700,
-    introVideo: "https://youtu.be/BOt3MNB71gI",
-  },
-  {
-    name: "Basic Level ( Level 2-3)",
-    img: "/brain/vedic_maths.jpeg",
-    dollarPrice: 200.99,
-    nairaPrice: null,
-    level: "Beginner",
-    category: "Most Popular",
-    isLoved: false,
-    rating: 5.0,
-    noEnrolled: 800,
-    field: "Abacus",
-    id: 2,
-    desc: "Abacus classes are designed to help children enhance their math skills and overall cognitive abilities. Using an abacus, students master quick and accurate arithmetic while improving concentration, memory, and problem-solving skills. These classes make learning math interactive and enjoyable, turning numbers into a game of logic and visualisation. Abacus training boosts confidence, sharpens the mind, and lays a strong foundation for lifelong learning. It is ideal for kids of all ages and nurtures a love for numbers and mental agility.",
-    skills: [
-      "Addition and subtraction with larger numbers.",
-      "Introduction to multiplication concepts.",
-      "Developing speed and accuracy in calculations.",
-    ],
-    duration: 3,
-    tutors: [
-      {
-        name: "Dominic Torredo",
-        job: "Software Engineer @Altschool",
-        email: "torredo@gmail.com",
-        img: "/assets/tobi.png",
-      },
-      {
-        name: "Ekundayo Musk",
-        job: "Software Engineer @Twitter",
-        email: "elonekundayomusk@gmail.com",
-        img: "/assets/richard.png",
-      },
-    ],
-    requirements: [
-      "You don't need a background in user experience, design or coding to take this course. It is totally beginner friendly",
-      "This is an in-depth course. Most of your classes will be 2 hours, 3 times a week.",
-      "You’re required to have a laptop with a minimum of 4gb ram to take this course comfortably.",
-    ],
-    syllabus: [
-      {
-        title: "Visual Design",
-        number: 1,
-        topics: [
-          "Introduction to Design and Design Principles",
-          "Style Guides and Design Systems",
-          "Wireframing and Prototyping",
-          "Mini project",
-        ],
-      },
-
-      {
-        title: "Visual Design",
-        number: 2,
-        topics: [
-          "User Research and Analysis",
-          "Style Guides and Design Systems",
-          "Wireframing and Prototyping",
-          "Mini project",
-        ],
-      },
-      {
-        title: "Web and Mobile App Design",
-        number: 3,
-        topics: [
-          "Introduction to Design and Design Principles",
-          "Style Guides and Design Systems",
-          "Wireframing and Prototyping",
-          "Mini project",
-        ],
-      },
-      {
-        title: "Project Phase ",
-        number: 4,
-        topics: [
-          "Design an nft landing page",
-          "Design an e-learning website",
-          "Redesign twitter user dashboard",
-          "Design an e-commerce website",
-        ],
-      },
-    ],
-    reviews: [
-      {
-        name: "Omotayo",
-        post: "Alumni",
-        review:
-          "This course is one of the best options you can get to begin your career journey as a UI/UX designer. I am grateful and excited that I chose this course to start with, and I would definitely recommend it to anyone. Thank you so much for putting this course together.",
-        likes: 50,
-        comments: 51,
-        img: "/assets/tayo.png",
-        daysAgo: 1,
-      },
-      {
-        name: "Tolulope",
-        post: "Student",
-        review:
-          "Extremely comprehensive course! My goal was to learn Figma, but you learn soo much more about the entire design process and even some web development basics. The instructors are doing a great job of showing their train fo thought and make it very easy to follow along with all Figma examples. Definitely worth it!",
-        likes: 70,
-        comments: 151,
-        img: "/assets/tayo.png",
-        daysAgo: 3,
-      },
-    ],
-
-    totalReviews: 750,
-    introVideo: "https://youtu.be/BOt3MNB71gI",
-  },
-  {
-    name: "Intermediate Level ( Level 4-5)",
-    img: "/brain/rubik_cube.jpeg",
-    dollarPrice: 150.49,
-    nairaPrice: null,
-    level: "Beginner",
-    category: "Most Popular",
-    isLoved: false,
-    rating: 4.4,
-    noEnrolled: 300,
-    field: "Abacus",
-    id: 3,
-    desc: "Abacus classes are designed to help children enhance their math skills and overall cognitive abilities. Using an abacus, students master quick and accurate arithmetic while improving concentration, memory, and problem-solving skills. These classes make learning math interactive and enjoyable, turning numbers into a game of logic and visualisation. Abacus training boosts confidence, sharpens the mind, and lays a strong foundation for lifelong learning. It is ideal for kids of all ages and nurtures a love for numbers and mental agility.",
-    skills: [
-      "Mastering multiplication and introducing division.",
-      "Transitioning from using the physical abacus to mental arithmetic.",
-      "Solving multi-step problems with improved precision.",
-    ],
-    duration: 3,
-    tutors: [
-      {
-        name: "Dominic Torredo",
-        job: "Software Engineer @Altschool",
-        email: "torredo@gmail.com",
-        img: "/assets/tobi.png",
-      },
-      {
-        name: "Ekundayo Musk",
-        job: "Software Engineer @Twitter",
-        email: "elonekundayomusk@gmail.com",
-        img: "/assets/richard.png",
-      },
-    ],
-    requirements: [
-      "You don't need a background in user experience, design or coding to take this course. It is totally beginner friendly",
-      "This is an in-depth course. Most of your classes will be 2 hours, 3 times a week.",
-      "You’re required to have a laptop with a minimum of 4gb ram to take this course comfortably.",
-    ],
-    syllabus: [
-      {
-        title: "Visual Design",
-        number: 1,
-        topics: [
-          "Introduction to Design and Design Principles",
-          "Style Guides and Design Systems",
-          "Wireframing and Prototyping",
-          "Mini project",
-        ],
-      },
-
-      {
-        title: "User Research and Analysis",
-        number: 2,
-        topics: [
-          "User Research and Analysis",
-          "Style Guides and Design Systems",
-          "Wireframing and Prototyping",
-          "Mini project",
-        ],
-      },
-      {
-        title: "Web and Mobile App Design",
-        number: 3,
-        topics: [
-          "Introduction to Design and Design Principles",
-          "Style Guides and Design Systems",
-          "Wireframing and Prototyping",
-          "Mini project",
-        ],
-      },
-      {
-        title: "Project Phase ",
-        number: 4,
-        topics: [
-          "Design a flier",
-          "Design an e-learning website logo",
-          "Design a billboard poster",
-          "Design a real estate advertisement ad poster",
-        ],
-      },
-    ],
-    reviews: [
-      {
-        name: "Omotayo",
-        post: "Alumni",
-        review:
-          "This course is one of the best options you can get to begin your career journey as a UI/UX designer. I am grateful and excited that I chose this course to start with, and I would definitely recommend it to anyone. Thank you so much for putting this course together.",
-        likes: 50,
-        comments: 51,
-        img: "/assets/tayo.png",
-        daysAgo: 1,
-      },
-      {
-        name: "Tolulope",
-        post: "Student",
-        review:
-          "Extremely comprehensive course! My goal was to learn Figma, but you learn soo much more about the entire design process and even some web development basics. The instructors are doing a great job of showing their train fo thought and make it very easy to follow along with all Figma examples. Definitely worth it!",
-        likes: 70,
-        comments: 151,
-        img: "/assets/tayo.png",
-        daysAgo: 3,
-      },
-    ],
-
-    totalReviews: 100,
-    introVideo: "https://youtu.be/WONZVnlam6U",
-  },
-  {
-    name: "Advanced Level ( Level 6-7)",
-    img: "/brain/mid_brain.jpeg",
-    dollarPrice: 250.49,
-    nairaPrice: null,
-    level: "Beginner",
-    category: "New",
-    isLoved: false,
-    rating: 4.6,
-    noEnrolled: 70,
-    field: "Abacus",
-    id: 4,
-    desc: "Abacus classes are designed to help children enhance their math skills and overall cognitive abilities. Using an abacus, students master quick and accurate arithmetic while improving concentration, memory, and problem-solving skills. These classes make learning math interactive and enjoyable, turning numbers into a game of logic and visualisation. Abacus training boosts confidence, sharpens the mind, and lays a strong foundation for lifelong learning. It is ideal for kids of all ages and nurtures a love for numbers and mental agility.",
-    skills: [
-      "Complex calculations, including decimals and percentages.",
-      "Strengthening mental arithmetic without the physical abacus.",
-      "Achieving high-speed calculations with large numbers."
-      
-    ],
-    duration: 5,
-    tutors: [
-      {
-        name: "Dominic Torredo",
-        job: "Software Engineer @Altschool",
-        email: "torredo@gmail.com",
-        img: "/assets/tobi.png",
-      },
-      {
-        name: "Ekundayo Musk",
-        job: "Software Engineer @Twitter",
-        email: "elonekundayomusk@gmail.com",
-        img: "/assets/richard.png",
-      },
-    ],
-    requirements: [
-      "You don't need a background in user experience, design or coding to take this course. It is totally beginner friendly",
-      "This is an in-depth course. Most of your classes will be 2 hours, 3 times a week.",
-      "You’re required to have a laptop with a minimum of 4gb ram to take this course comfortably.",
-    ],
-    syllabus: [
-      {
-        title: "Microsoft Excel",
-        number: 1,
-        topics: [
-          "Introduction to Design and Design Principles",
-          "Style Guides and Design Systems",
-          "Wireframing and Prototyping",
-          "Mini project",
-        ],
-      },
-
-      {
-        title: "Microsoft Access",
-        number: 2,
-        topics: [
-          "User Research and Analysis",
-          "Style Guides and Design Systems",
-          "Wireframing and Prototyping",
-          "Mini project",
-        ],
-      },
-      {
-        title: "SQL databases and Querying",
-        number: 3,
-        topics: [
-          "Introduction to Design and Design Principles",
-          "Style Guides and Design Systems",
-          "Wireframing and Prototyping",
-          "Mini project",
-        ],
-      },
-      {
-        title: "Project Phase ",
-        number: 4,
-        topics: [
-          "Design an nft landing page",
-          "Design an e-learning website",
-          "Redesign twitter user dashboard",
-          "Design an e-commerce website",
-        ],
-      },
-    ],
-    reviews: [
-      {
-        name: "Omotayo",
-        post: "Alumni",
-        review:
-          "This course is one of the best options you can get to begin your career journey as a UI/UX designer. I am grateful and excited that I chose this course to start with, and I would definitely recommend it to anyone. Thank you so much for putting this course together.",
-        likes: 90,
-        comments: 51,
-        img: "/assets/tayo.png",
-        daysAgo: 1,
-      },
-      {
-        name: "Tolulope",
-        post: "Student",
-        review:
-          "Extremely comprehensive course! My goal was to learn Figma, but you learn soo much more about the entire design process and even some web development basics. The instructors are doing a great job of showing their train fo thought and make it very easy to follow along with all Figma examples. Definitely worth it!",
-        likes: 80,
-        comments: 150,
-        img: "/assets/tayo.png",
-        daysAgo: 3,
-      },
-    ],
-
-    totalReviews: 400,
-    introVideo: "https://youtu.be/SfE3aO3LWi0",
-  },
-  {
-    name: "Grand Level (Proficiency) ( Level 8)",
-    img: "/brain/right_barin.jpeg",
-    dollarPrice: 305.99,
-    nairaPrice: null,
-    level: "Expert",
-    category: "Most Popular",
-    isLoved: false,
-    rating: 4.8,
-    noEnrolled: 490,
-    field: "Abacus",
-    id: 5,
-    desc: "Abacus classes are designed to help children enhance their math skills and overall cognitive abilities. Using an abacus, students master quick and accurate arithmetic while improving concentration, memory, and problem-solving skills. These classes make learning math interactive and enjoyable, turning numbers into a game of logic and visualisation. Abacus training boosts confidence, sharpens the mind, and lays a strong foundation for lifelong learning. It is ideal for kids of all ages and nurtures a love for numbers and mental agility.",
-    skills: [
-      "Mastery of all arithmetic operations (addition, subtraction, multiplication, division).",
-      "Fluency in solving real-world math problems using mental arithmetic.",
-      "Exceptional speed, accuracy, and confidence in calculations.",
-    ],
-    duration: 6,
-    tutors: [
-      {
-        name: "Dominic Torredo",
-        job: "Software Engineer @Altschool",
-        email: "torredo@gmail.com",
-        img: "/assets/tobi.png",
-      },
-      {
-        name: "Ekundayo Musk",
-        job: "Software Engineer @Twitter",
-        email: "elonekundayomusk@gmail.com",
-        img: "/assets/richard.png",
-      },
-    ],
-    requirements: [
-      "You don't need a background in user experience, design or coding to take this course. It is totally beginner friendly",
-      "This is an in-depth course. Most of your classes will be 2 hours, 3 times a week.",
-      "You’re required to have a laptop with a minimum of 4gb ram to take this course comfortably.",
-    ],
-    syllabus: [
-      {
-        title: "HMTL, The Backbone of the Web",
-        number: 1,
-        topics: [
-          "Introduction to Design and Design Principles",
-          "Style Guides and Design Systems",
-          "Wireframing and Prototyping",
-          "Mini project",
-        ],
-      },
-
-      {
-        title: "CSS, Beauty of the web",
-        number: 2,
-        topics: [
-          "User Research and Analysis",
-          "Style Guides and Design Systems",
-          "Wireframing and Prototyping",
-          "Mini project",
-        ],
-      },
-      {
-        title: "Responsive Web Design",
-        number: 3,
-        topics: [
-          "Introduction to Design and Design Principles",
-          "Style Guides and Design Systems",
-          "Wireframing and Prototyping",
-          "Mini project",
-        ],
-      },
-      {
-        title: "Project Phase ",
-        number: 4,
-        topics: [
-          "Code an nft landing page",
-          "Develop an e-learning website",
-          "Redesign twitter user dashboard",
-          "Develop an e-commerce website",
-        ],
-      },
-    ],
-    reviews: [
-      {
-        name: "Omotayo",
-        post: "Alumni",
-        review:
-          "This course is one of the best options you can get to begin your career journey as a UI/UX designer. I am grateful and excited that I chose this course to start with, and I would definitely recommend it to anyone. Thank you so much for putting this course together.",
-        likes: 50,
-        comments: 51,
-        img: "/assets/tayo.png",
-        daysAgo: 4,
-      },
-      {
-        name: "Tolulope",
-        post: "Student",
-        review:
-          "Extremely comprehensive course! My goal was to learn Figma, but you learn soo much more about the entire design process and even some web development basics. The instructors are doing a great job of showing their train fo thought and make it very easy to follow along with all Figma examples. Definitely worth it!",
-        likes: 700,
-        comments: 51,
-        img: "/assets/tayo.png",
-        daysAgo: 7,
-      },
-    ],
-
-    totalReviews: 800,
-    introVideo: "https://youtu.be/zJSY8tbf_ys",
-  },
+  // rubik's cube
   {
     name: "2x2 Rubik’s Cube (Pocket Cube)",
     img: "/brain/mid_brain.jpeg",
@@ -556,6 +21,7 @@ export const AllCourses: ICourse[] = [
     rating: 5.0,
     noEnrolled: 312,
     field: "Rubik's Cube",
+    slug:"rubik-cube",
     id: 6,
     desc: `The classic Rubik's Cube, with 3 squares on each side. It's the most popular and widely recognized.`,
     skills: [
@@ -661,6 +127,7 @@ export const AllCourses: ICourse[] = [
     rating: 4.8,
     noEnrolled: 490,
     field: "Rubik's Cube",
+    slug:"rubik-cube",
     id: 7,
     desc: `A more complex version with 4 squares on each side, adds extra layers of difficulty and requires more advanced solving techniques.`,
     skills: [
@@ -752,6 +219,378 @@ export const AllCourses: ICourse[] = [
         img: "/assets/tayo.png",
         daysAgo: 7,
       },
+    ],
+
+    totalReviews: 800,
+    introVideo: "https://youtu.be/zJSY8tbf_ys",
+  },
+  {
+    name: "3x3 Rubik’s Cube",
+    img: "/brain/right_barin.jpeg",
+    dollarPrice: 305.99,
+    nairaPrice: null,
+    level: "Expert",
+    category: "Most Popular",
+    isLoved: false,
+    rating: 4.8,
+    noEnrolled: 490,
+    field: "Rubik's Cube",
+    slug:"rubik-cube",
+    id: 8,
+    desc: `The classic Rubik's Cube, with 3 squares on each side. It's the most popular and widely recognized.`,
+    skills: [
+      "Mastery of all arithmetic operations (addition, subtraction, multiplication, division).",
+      "Fluency in solving real-world math problems using mental arithmetic.",
+      "Exceptional speed, accuracy, and confidence in calculations.",
+    ],
+    duration: 6,
+    tutors: [
+      {
+        name: "Dominic Torredo",
+        job: "Software Engineer @Altschool",
+        email: "torredo@gmail.com",
+        img: "/assets/tobi.png",
+      },
+      {
+        name: "Ekundayo Musk",
+        job: "Software Engineer @Twitter",
+        email: "elonekundayomusk@gmail.com",
+        img: "/assets/richard.png",
+      },
+    ],
+    requirements: [
+      "You don't need a background in user experience, design or coding to take this course. It is totally beginner friendly",
+      "This is an in-depth course. Most of your classes will be 2 hours, 3 times a week.",
+      "You’re required to have a laptop with a minimum of 4gb ram to take this course comfortably.",
+    ],
+    syllabus: [
+      {
+        title: "HMTL, The Backbone of the Web",
+        number: 1,
+        topics: [
+          "Introduction to Design and Design Principles",
+          "Style Guides and Design Systems",
+          "Wireframing and Prototyping",
+          "Mini project",
+        ],
+      },
+
+      {
+        title: "CSS, Beauty of the web",
+        number: 2,
+        topics: [
+          "User Research and Analysis",
+          "Style Guides and Design Systems",
+          "Wireframing and Prototyping",
+          "Mini project",
+        ],
+      },
+      {
+        title: "Responsive Web Design",
+        number: 3,
+        topics: [
+          "Introduction to Design and Design Principles",
+          "Style Guides and Design Systems",
+          "Wireframing and Prototyping",
+          "Mini project",
+        ],
+      },
+      {
+        title: "Project Phase ",
+        number: 4,
+        topics: [
+          "Code an nft landing page",
+          "Develop an e-learning website",
+          "Redesign twitter user dashboard",
+          "Develop an e-commerce website",
+        ],
+      },
+    ],
+    reviews: [
+      {
+        name: "Omotayo",
+        post: "Alumni",
+        review:
+          "This course is one of the best options you can get to begin your career journey as a UI/UX designer. I am grateful and excited that I chose this course to start with, and I would definitely recommend it to anyone. Thank you so much for putting this course together.",
+        likes: 50,
+        comments: 51,
+        img: "/assets/tayo.png",
+        daysAgo: 4,
+      },
+      {
+        name: "Tolulope",
+        post: "Student",
+        review:
+          "Extremely comprehensive course! My goal was to learn Figma, but you learn soo much more about the entire design process and even some web development basics. The instructors are doing a great job of showing their train fo thought and make it very easy to follow along with all Figma examples. Definitely worth it!",
+        likes: 700,
+        comments: 51,
+        img: "/assets/tayo.png",
+        daysAgo: 7,
+      },
+    ],
+
+    totalReviews: 800,
+    introVideo: "https://youtu.be/zJSY8tbf_ys",
+  },
+  {
+    name: "5x5 Rubik’s Cube (Professor’s Cube)",
+    img: "/brain/right_barin.jpeg",
+    dollarPrice: 305.99,
+    nairaPrice: null,
+    level: "Expert",
+    category: "Most Popular",
+    isLoved: false,
+    rating: 4.8,
+    noEnrolled: 490,
+    field: "Rubik's Cube",
+    slug:"rubik-cube",
+    id: 9,
+    desc: `Even more challenging than the 4x4, this cube has 5 squares per side, with more pieces and complex algorithms to learn.`,
+    skills: [
+      "Mastery of all arithmetic operations (addition, subtraction, multiplication, division).",
+      "Fluency in solving real-world math problems using mental arithmetic.",
+      "Exceptional speed, accuracy, and confidence in calculations.",
+    ],
+    duration: 6,
+    tutors: [
+      {
+        name: "Dominic Torredo",
+        job: "Software Engineer @Altschool",
+        email: "torredo@gmail.com",
+        img: "/assets/tobi.png",
+      },
+      {
+        name: "Ekundayo Musk",
+        job: "Software Engineer @Twitter",
+        email: "elonekundayomusk@gmail.com",
+        img: "/assets/richard.png",
+      },
+    ],
+    requirements: [
+      "You don't need a background in user experience, design or coding to take this course. It is totally beginner friendly",
+      "This is an in-depth course. Most of your classes will be 2 hours, 3 times a week.",
+      "You’re required to have a laptop with a minimum of 4gb ram to take this course comfortably.",
+    ],
+    syllabus: [
+      {
+        title: "HMTL, The Backbone of the Web",
+        number: 1,
+        topics: [
+          "Introduction to Design and Design Principles",
+          "Style Guides and Design Systems",
+          "Wireframing and Prototyping",
+          "Mini project",
+        ],
+      },
+
+      {
+        title: "CSS, Beauty of the web",
+        number: 2,
+        topics: [
+          "User Research and Analysis",
+          "Style Guides and Design Systems",
+          "Wireframing and Prototyping",
+          "Mini project",
+        ],
+      },
+      {
+        title: "Responsive Web Design",
+        number: 3,
+        topics: [
+          "Introduction to Design and Design Principles",
+          "Style Guides and Design Systems",
+          "Wireframing and Prototyping",
+          "Mini project",
+        ],
+      },
+      {
+        title: "Project Phase ",
+        number: 4,
+        topics: [
+          "Code an nft landing page",
+          "Develop an e-learning website",
+          "Redesign twitter user dashboard",
+          "Develop an e-commerce website",
+        ],
+      },
+    ],
+    reviews: [
+      {
+        name: "Omotayo",
+        post: "Alumni",
+        review:
+          "This course is one of the best options you can get to begin your career journey as a UI/UX designer. I am grateful and excited that I chose this course to start with, and I would definitely recommend it to anyone. Thank you so much for putting this course together.",
+        likes: 50,
+        comments: 51,
+        img: "/assets/tayo.png",
+        daysAgo: 4,
+      },
+      {
+        name: "Tolulope",
+        post: "Student",
+        review:
+          "Extremely comprehensive course! My goal was to learn Figma, but you learn soo much more about the entire design process and even some web development basics. The instructors are doing a great job of showing their train fo thought and make it very easy to follow along with all Figma examples. Definitely worth it!",
+        likes: 700,
+        comments: 51,
+        img: "/assets/tayo.png",
+        daysAgo: 7,
+      },
+    ],
+
+    totalReviews: 800,
+    introVideo: "https://youtu.be/zJSY8tbf_ys",
+  },
+  {
+    name: "Pyraminx",
+    img: "/brain/right_barin.jpeg",
+    dollarPrice: 305.99,
+    nairaPrice: null,
+    level: "Expert",
+    category: "Most Popular",
+    isLoved: false,
+    rating: 4.8,
+    noEnrolled: 490,
+    field: "Rubik's Cube",
+    id: 10,
+    slug:"rubik-cube",
+    desc: `A pyramid-shaped puzzle, offering a different type of challenge while maintaining similar solving principles to the Rubik’s Cube.`,
+    skills: [
+      "Mastery of all arithmetic operations (addition, subtraction, multiplication, division).",
+      "Fluency in solving real-world math problems using mental arithmetic.",
+      "Exceptional speed, accuracy, and confidence in calculations.",
+    ],
+    duration: 6,
+    tutors: [
+      {
+        name: "Dominic Torredo",
+        job: "Software Engineer @Altschool",
+        email: "torredo@gmail.com",
+        img: "/assets/tobi.png",
+      },
+      {
+        name: "Ekundayo Musk",
+        job: "Software Engineer @Twitter",
+        email: "elonekundayomusk@gmail.com",
+        img: "/assets/richard.png",
+      },
+    ],
+    requirements: [
+      "You don't need a background in user experience, design or coding to take this course. It is totally beginner friendly",
+      "This is an in-depth course. Most of your classes will be 2 hours, 3 times a week.",
+      "You’re required to have a laptop with a minimum of 4gb ram to take this course comfortably.",
+    ],
+    syllabus: [
+      {
+        title: "HMTL, The Backbone of the Web",
+        number: 1,
+        topics: [
+          "Introduction to Design and Design Principles",
+          "Style Guides and Design Systems",
+          "Wireframing and Prototyping",
+          "Mini project",
+        ],
+      },
+
+      {
+        title: "CSS, Beauty of the web",
+        number: 2,
+        topics: [
+          "User Research and Analysis",
+          "Style Guides and Design Systems",
+          "Wireframing and Prototyping",
+          "Mini project",
+        ],
+      },
+      {
+        title: "Responsive Web Design",
+        number: 3,
+        topics: [
+          "Introduction to Design and Design Principles",
+          "Style Guides and Design Systems",
+          "Wireframing and Prototyping",
+          "Mini project",
+        ],
+      },
+      {
+        title: "Project Phase ",
+        number: 4,
+        topics: [
+          "Code an nft landing page",
+          "Develop an e-learning website",
+          "Redesign twitter user dashboard",
+          "Develop an e-commerce website",
+        ],
+      },
+    ],
+    reviews: [
+      {
+        name: "Omotayo",
+        post: "Alumni",
+        review:
+          "This course is one of the best options you can get to begin your career journey as a UI/UX designer. I am grateful and excited that I chose this course to start with, and I would definitely recommend it to anyone. Thank you so much for putting this course together.",
+        likes: 50,
+        comments: 51,
+        img: "/assets/tayo.png",
+        daysAgo: 4,
+      },
+      {
+        name: "Tolulope",
+        post: "Student",
+        review:
+          "Extremely comprehensive course! My goal was to learn Figma, but you learn soo much more about the entire design process and even some web development basics. The instructors are doing a great job of showing their train fo thought and make it very easy to follow along with all Figma examples. Definitely worth it!",
+        likes: 700,
+        comments: 51,
+        img: "/assets/tayo.png",
+        daysAgo: 7,
+      },
+    ],
+
+    totalReviews: 800,
+    introVideo: "https://youtu.be/zJSY8tbf_ys",
+  },
+  {
+    name: "Cylindrical Cube",
+    img: "/brain/right_barin.jpeg",
+    dollarPrice: 305.99,
+    nairaPrice: null,
+    level: "Expert",
+    category: "Most Popular",
+    isLoved: false,
+    rating: 4.8,
+    noEnrolled: 490,
+    field: "Rubik's Cube",
+    id: 11,
+    slug:"rubik-cube",
+    desc: `The Cylindrical Cube is a 3D puzzle that combines the challenge of a Rubik’s Cube with a cylindrical shape, requiring unique strategies to solve.`,
+    skills: [
+      "Mastery of all arithmetic operations (addition, subtraction, multiplication, division).",
+      "Fluency in solving real-world math problems using mental arithmetic.",
+      "Exceptional speed, accuracy, and confidence in calculations.",
+    ],
+    duration: 6,
+    tutors: [
+      {
+        name: "Dominic Torredo",
+        job: "Software Engineer @Altschool",
+        email: "torredo@gmail.com",
+        img: "/assets/tobi.png",
+      },
+      {
+        name: "Ekundayo Musk",
+        job: "Software Engineer @Twitter",
+        email: "elonekundayomusk@gmail.com",
+        img: "/assets/richard.png",
+      },
+    ],
+    requirements: [
+      "You don't need a background in user experience, design or coding to take this course. It is totally beginner friendly",
+      "This is an in-depth course. Most of your classes will be 2 hours, 3 times a week.",
+      "You’re required to have a laptop with a minimum of 4gb ram to take this course comfortably.",
+    ],
+    syllabus: [
+    ],
+    reviews: [
+
     ],
 
     totalReviews: 800,
@@ -1655,6 +1494,14 @@ export const AllCourses: ICourse[] = [
   // },
 ];
 
+export const AllCategory: ICategory[] = [
+  { id: 2,name: "Abacus", isSelected: false, filterByType: true, img: "/brain/abacus.jpeg",Slug: '' },
+  { id: 3,name: "Rubik's Cube", isSelected: false, filterByType: true, img: "/brain/rubik_cube.jpeg", Slug: '' },
+  { id: 4,name: "Mid Brain Activation", isSelected: false, filterByType: true, img: "/brain/mid_brain.jpeg", Slug: '' },
+  { id: 5,name: "Right Brain Activation", isSelected: false, filterByType: true, img: "/brain/right_barin.jpeg", Slug: '' },
+  { id: 6,name: "Vedic Maths", isSelected: false, filterByType: true, img: "/brain/vedic_maths.jpeg", Slug: '' },
+]
+
 export const FiltersByTime: IFilterButton[] = [
   { filter: "Most Popular", isSelected: true },
   { filter: "New", isSelected: false },
@@ -1834,15 +1681,15 @@ export const Contacts: IReachout[] = [
   },
   {
     name: "Call",
-    deet: "",
-    note: "",
+    deet: "+91 8076291411",
+    note: "You can contact us on mobile and we’ll get back to you.",
     svg: "phone",
     link: "",
   },
   {
     name: "Visit",
-    deet: "",
-    note: "",
+    deet: "WZ- 283/281, Gali No. 9,Maddi Wali Gali, Vishnu Garden, New Delhi, 110018, India",
+    note: "You can visit us at below address.",
     svg: "location",
     link: "",
   },

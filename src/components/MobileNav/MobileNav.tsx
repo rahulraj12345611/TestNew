@@ -32,15 +32,15 @@ const MobileNav:FunctionComponent= () => {
         <div className="one">
           <div className="avatar">
             <Image
-              src={"/assets/nav_avatar.png"}
+              src={"/brain/brain_new_logo.png"}
               alt={"nav avatar"}
-              width={40}
+              width={80}
               height={40}
             />
-            <h5>Hi, Micheal!</h5>
+            <h5>Hello!</h5>
           </div>
           <div className="sidemenu-links">
-            <Link href={"/courses"}>
+            <Link href={"/category"}>
               <PageLinkStyle color="var(--grey-500, #525252)" $ispageactive={router.pathname === "/courses"}>Courses</PageLinkStyle>
             </Link>
             <Link href={"/about"}>
@@ -51,21 +51,21 @@ const MobileNav:FunctionComponent= () => {
             </Link>
           </div>
           <div className="sidemenu-links">
-            <SideMenuButtonStyle>
+            {/* <SideMenuButtonStyle>
               <p>Wishlist</p>
               <div className="count">
                 <span>1</span>
               </div>
-            </SideMenuButtonStyle>
-            <SideMenuButtonStyle>
+            </SideMenuButtonStyle> */}
+            {/* <SideMenuButtonStyle>
               <p>Notification</p>
               <div className="count">
                 <span>1</span>
               </div>
-            </SideMenuButtonStyle>
-            <Link href={"#"}>
+            </SideMenuButtonStyle> */}
+            {/* <Link href={"#"}>
               <PageLinkStyle color="var(--grey-500, #525252)" $ispageactive={false}>Profile</PageLinkStyle>
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="two">

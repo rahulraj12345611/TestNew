@@ -10,6 +10,7 @@ const Contact: FunctionComponent = () => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>The Brain Connections | Contact</title>
+        <link rel="icon" href="/brain/brain_new_logo.png" />
       </Head>
       <ContactComp />
       <ReachOut />

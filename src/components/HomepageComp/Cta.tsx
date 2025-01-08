@@ -6,11 +6,11 @@ import { ActualPaddedSectionStyle, CtaPaddedSectionStyle } from "@/styles/Homepa
 
 const Cta = () => {
   return (
-    <CtaPaddedSectionStyle>
-      <CtaStyles>
+    <CtaPaddedSectionStyle >
+      <CtaStyles style={{backgroundColor: "white"}}>
         <ActualPaddedSectionStyle>
-          <div className="cta">
-            <SectionHead
+          <div className="cta" >
+            <SectionHead 
               bigtext="Start Your Learning Journey Today"
               smalltext="Don’t wait till you’re sure, there’s space for everyone in tech, Join Us Today"
             />

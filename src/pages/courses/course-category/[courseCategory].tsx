@@ -1,6 +1,6 @@
 import CourseCatalog from "@/components/Coursepage/CourseCatalog";
 import { BigSectionHead } from "@/components/SectionHead/BigSectionHead";
-import { useAppSelector } from "@/redux/hook";
+import { useAppSelector, useAppDispatch } from "@/redux/hook";
 import { RootState } from "@/redux/store";
 import { MarginStyle } from "@/styles/CoursepageStyles/Coursepage";
 import { CenterItemStyle } from "@/styles/HeroStyles/CenterItem";
@@ -9,11 +9,10 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 const Courses = () => {
-  const { searchQuery } = useAppSelector((state: RootState) => state.data);
+  const { searchQuery } = useAppSelector((state: RootState) => state.data);  
   const router = useRouter();
-  
   const queryParams = router.query;
-  console.log(queryParams, 'queryParamsqueryParamsqueryParamsqueryParams6666')
+  console.log(queryParams,searchQuery, 'queryParamsqueryParamsqueryParamsqueryParams6666')
   return (
     <>
       <Head>
@@ -32,7 +31,7 @@ const Courses = () => {
           <CenterItemStyle>
             <h3>
               {searchQuery === null ? (
-                `${queryParams.name} courses`
+                `${queryParams.courseCategory} courses`
               ) : (
                 <div className="sh">
                   <>Search results for </>
@@ -41,7 +40,7 @@ const Courses = () => {
               )}
             </h3>
           </CenterItemStyle>
-          <CourseCatalog catName={queryParams?.name}/>
+          <CourseCatalog/>
         </ActualPaddedSectionStyle>
       </MarginStyle>
     </>

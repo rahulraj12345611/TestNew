@@ -26,12 +26,13 @@ export const AboutHero: FunctionComponent = () => {
           initial="initial"
           whileInView="final"
           viewport={{ once: true }}
+          style={{backgroundColor: "DarkSeaGreen"}}
         ></motion.div>
         <ActualPaddedSectionStyle>
           <div className="main">
             <div className="hero-text">
               <h1>
-                Welcome to <strong>The Brain Connections’s !</strong> 
+                Welcome to <strong>The Brain Connections !</strong> 
               </h1>
               <p className="desktop hero-p">
                 In The Brain Connections, we guide you with the best available teaching and
@@ -52,7 +53,7 @@ export const AboutHero: FunctionComponent = () => {
               <TabOnly>
                 <Image
                   alt="hero img"
-                  src="/assets/experts.png"
+                  src="/brain/contact_brain.jpg"
                   width={517.695}
                   height={402.511}
                   priority={true}
@@ -85,7 +86,7 @@ export const AboutHero: FunctionComponent = () => {
             <div className="mobile">
               <div className="action">
                 <Link href={"/courses"}>
-                  <LinkStyle color="var(--purple, #228B22)">
+                  <LinkStyle color="var(--green, #097969)">
                     View Our Courses
                   </LinkStyle>
                 </Link>
@@ -150,7 +151,7 @@ export const TeamMemberComp: FunctionComponent<ITeamMember> = ({
 export const Team: FunctionComponent = () => {
   return (
     <>
-      <TeamStyle>
+      {/* <TeamStyle>
         <SectionHead
           bigtext="Meet Our Team"
           smalltext="Meet the brilliant minds behind this brilliant platform"
@@ -168,7 +169,7 @@ export const Team: FunctionComponent = () => {
             ))}
           </div>
         </ActualPaddedSectionStyle>
-      </TeamStyle>
+      </TeamStyle> */}
     </>
   );
 };

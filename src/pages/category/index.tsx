@@ -1,3 +1,4 @@
+import CategoryCatalog from "@/components/Categorypage/CategoryCatalog";
 import CourseCatalog from "@/components/Coursepage/CourseCatalog";
 import { BigSectionHead } from "@/components/SectionHead/BigSectionHead";
 import { useAppSelector } from "@/redux/hook";
@@ -6,20 +7,14 @@ import { MarginStyle } from "@/styles/CoursepageStyles/Coursepage";
 import { CenterItemStyle } from "@/styles/HeroStyles/CenterItem";
 import { ActualPaddedSectionStyle } from "@/styles/HomepageStyles/Section";
 import Head from "next/head";
-import { useRouter } from "next/router";
 
-const Courses = () => {
+const Category = () => {
   const { searchQuery } = useAppSelector((state: RootState) => state.data);
-  const router = useRouter();
-  
-  const queryParams = router.query;
-  console.log(queryParams, 'queryParamsqueryParamsqueryParamsqueryParams6666')
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>The Brain Connections | Courses</title>
-        <link rel="icon" href="/brain/brain_new_logo.png" />
       </Head>
       <CenterItemStyle>
         <BigSectionHead
@@ -32,7 +27,7 @@ const Courses = () => {
           <CenterItemStyle>
             <h3>
               {searchQuery === null ? (
-                `${queryParams.name} courses`
+                "All Courses"
               ) : (
                 <div className="sh">
                   <>Search results for </>
@@ -41,11 +36,12 @@ const Courses = () => {
               )}
             </h3>
           </CenterItemStyle>
-          <CourseCatalog catName={queryParams?.name}/>
+          {/* <CourseCatalog /> */}
+          <CategoryCatalog />
         </ActualPaddedSectionStyle>
       </MarginStyle>
     </>
   );
 };
 
-export default Courses;
+export default Category;

@@ -42,7 +42,7 @@ export const LinkStyle = styled.p<ILinkB>`
   line-height: 1.5rem;
   width: fit-content;
   &:hover {
-    color: var(--purple-600, #6820ab);
+    color: var(--green-600, #097969);
   }
   ${(props) =>
     props.hovercolor &&

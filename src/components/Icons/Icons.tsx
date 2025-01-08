@@ -35,7 +35,7 @@ export const Logo = () => {
     <LogoStyle>
       {/* <h2> */}
         {/* <strong>X</strong>endar */}
-        <Image alt="new-logo"  src="/brain/brain_new_logo.png" width={250} height={150} />
+        <Image alt="new-logo"  src="/brain/brain_new_logo.png" width={250} height={120} />
         {/* <strong style={{color: "green"}}>The </strong> Brain connections */}
       {/* </h2> */}
     </LogoStyle>

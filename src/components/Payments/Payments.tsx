@@ -967,7 +967,7 @@ export const CompletionComp: FunctionComponent<ICompletion> = ({
             </div>
             <div className="two">
               <DetailSmallStyles>
-                You have successfully registered for The Brain Connections’s {courseName}
+                You have successfully registered for The Brain Connections {courseName}
                 {showTryFreeModal && " 1 week Demo class"}
                 <br />
                 You will receive an email shortly, containing all the necessary

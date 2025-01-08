@@ -17,9 +17,12 @@ import { useAppDispatch, useAppSelector } from "@/redux/hook";
 import { RootState } from "@/redux/store";
 import { setContactForm } from "@/redux/dataSlice";
 import { Checked } from "../Icons/Icons";
+import * as CommonAction from "../../pages/api/actionreducer/action/Common.action";
+import { toast } from "react-toastify";
 
 export interface IContactForm {
   name: string;
+  mobile: number;
   email: string;
   subject: string;
   msg: string;
@@ -42,11 +45,27 @@ export const ContactComp: FunctionComponent = () => {
   
   const [isContactFormSubmitted, setIsContactFormSubmitted] = useState(false);
   const dispatch = useAppDispatch();
-  const handleContactForm = (data: IContactForm) => {
-    // reset();
-    // dispatch(setContactForm(data));
-    // setIsContactFormSubmitted(true);
+  // const handleContactForm = async(data: IContactForm) => {
+  //   let datas = {name: "test"}
+  //   const resData = await dispatch(CommonAction.submitContact({data: datas}))
+  //   console.log(resData, 'res data.....')
+  //   // reset();
+  //   // dispatch(setContactForm(data));
+  //   // setIsContactFormSubmitted(true);
+  // };
+  const handleContactForm = async(data: IContactForm) => {
+    const resData = await dispatch(CommonAction.submitContact(data))
+    console.log(resData, 'res data.....')
+    if(resData?.status) {
+      toast("Thanks! for reaching us we will contact you soon.", { type: "success" });
+      reset();
+    } else {
+      toast("Something went wrong!", { type: "error" });
+    }
   };
+
+
+
   return (
     <ContactStyles>
       <SectionHead
@@ -93,17 +112,17 @@ export const ContactComp: FunctionComponent = () => {
               </div>
               <div className="form-ele">
                 <FormLabelStyles>
-                  <label htmlFor="name">Mobile</label>
+                  <label htmlFor="mobile">Mobile</label>
                 </FormLabelStyles>
                 <InputStyles>
                   <input
                     type="text"
                     id=""
                     placeholder="Mobile..."
-                    {...register("name", { required: "Mobile is required" })}
+                    {...register("mobile", { required: "Mobile is required" })}
                   />
                 </InputStyles>
-                <ErrorStyles>{errors?.name && errors.name.message}</ErrorStyles>
+                <ErrorStyles>{errors?.mobile && errors.mobile.message}</ErrorStyles>
               </div>
               <div className="form-ele">
                 <FormLabelStyles>

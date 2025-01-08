@@ -4,7 +4,7 @@ import ButtonGroup from "../Button/ButtonGroup";
 import { useAppDispatch, useAppSelector } from "@/redux/hook";
 import { RootState } from "@/redux/store";
 import { CourseCatalogStyles } from "@/styles/CoursepageStyles/Coursepage";
-import { CourseCard } from "../CourseCard/CourseCard";
+// import { CourseCard } from "../CourseCard/CourseCard";
 import { convertToNaira } from "../Info/Wishlist";
 import {
   resetFiltersByType,
@@ -13,10 +13,15 @@ import {
 } from "@/redux/dataSlice";
 import { DetailH3Styles } from "@/styles/CoursepageStyles/CourseDetail";
 import { ErrorMsg } from "./Error";
+import * as CommonAction from "../../pages/api/actionreducer/action/Common.action";
+import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
+const CourseCard = dynamic(() => import("../CourseCard/CourseCard"), {ssr: false});
 
-const CourseCatalog: FunctionComponent = () => {
+
+const CourseCatalog: any = () => {
   const {
-    filtersByType,
+    // filtersByType,
     filteredByTypeCourses,
     allCourses,
     filteredBySearchCourses,
@@ -26,6 +31,23 @@ const CourseCatalog: FunctionComponent = () => {
   } = useAppSelector((state: RootState) => state.data);
   const dispatch = useAppDispatch();
   const [lengthOfList, setLengthOfList] = useState(0);
+  const [coursesList, setCoursesList] = useState([]) as any;
+  const router = useRouter();
+  const {courseCategory} = router.query;
+
+  console.log(courseCategory, 'propsspsspsp33')
+  const getCourses = async() => {
+    if(courseCategory) {
+      const resData = await dispatch(CommonAction.getCourses({Slug: courseCategory}))
+      if(resData?.status) {
+        setCoursesList(resData?.data)
+      }
+    }
+  }
+
+  useEffect(() => {
+    getCourses()
+  }, [router])
 
   useEffect(() => {
     if (isSearching) {
@@ -49,36 +71,33 @@ const CourseCatalog: FunctionComponent = () => {
     filteredByTypeCourses,
     searchQuery,
   ]);
+  // let currCourse = [] as any;
+  // useEffect(() => {
+  //   currCourse =  allCourses?.filter((item: any) => item.slug == "rubik-cube")
+  // })
+  // console.log(props?.catName,currCourse, 'props?.catNamecatNamecatName...')
+  // console.log(allCourses, 'allCourses...nnnnnnnnnnnnnn')
+  // const currCourse =  allCourses?.filter((item) => item.field == props?.catName)
+  // const currCourse =  allCourses?.filter((item) => item.slug == "rubik-cube")
 
   // fix the course card arguments issue
   return (
     <CourseCatalogStyles>
-      <ButtonGroup filters={filtersByType} />
       <div className="info">
-        {lengthOfList > 0 && (
-          <p>
-            There {lengthOfList > 1 ? "are " : "is "}
-            <strong style={{color: "green"}}>
-              {lengthOfList > 0 && lengthOfList}{" "}
-              {lengthOfList > 1 ? "courses " : "course "}
-            </strong>{" "}
-            in this category
-          </p>
-        )}
       </div>
       <div className="group">
         {!isSearching &&
-          filteredByTypeCourses?.map((ele, index) => (
+          coursesList?.map((ele: any, index: any) => (
             <CourseCard
               key={index}
-              name={ele.name}
+              name={ele.product_name}
               level={ele.level}
               rating={ele.rating}
-              dollarPrice={ele.dollarPrice}
+              dollarPrice={ele.price}
               field={ele.field}
               category={ele.category}
               isLoved={ele.isLoved}
-              img={ele.img}
+              img={ele.image}
               nairaPrice={convertToNaira(ele.dollarPrice)}
               noEnrolled={ele.noEnrolled}
               id={ele.id}
@@ -90,10 +109,11 @@ const CourseCatalog: FunctionComponent = () => {
               tutors={ele.tutors}
               reviews={ele.reviews}
               totalReviews={ele.totalReviews}
-              introVideo={ele.introVideo}
+              introVideo={ele.lecture_link}
+              slug={ele.slug}
             />
           ))}
-        {isSearching &&
+        {/* {isSearching &&
           filteredSearchCoursesByType?.map((ele, index) => (
             <CourseCard
               key={index}
@@ -117,12 +137,13 @@ const CourseCatalog: FunctionComponent = () => {
               reviews={ele.reviews}
               totalReviews={ele.totalReviews}
               introVideo={ele.introVideo}
+              slug={ele.slug}
             />
-          ))}
+          ))} */}
         {/* fix the zero element issue */}
-        {isSearching && filteredSearchCoursesByType?.length === 0 && (
+        {/* {isSearching && filteredSearchCoursesByType?.length === 0 && (
           <ErrorMsg errormsg="No Match Found" />
-        )}
+        )} */}
       </div>
     </CourseCatalogStyles>
   );

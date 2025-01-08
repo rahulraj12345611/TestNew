@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect } from "react";
+import React, { FunctionComponent, useEffect, useState } from "react";
 import SectionHead from "../SectionHead/SectionHead";
 import ButtonGroup from "../Button/ButtonGroup";
 import { PaddedSectionStyle } from "@/styles/HomepageStyles/Section";
@@ -6,24 +6,38 @@ import { CoursesGroupStyle } from "@/styles/HeroStyles/coursesGroup";
 import { useAppDispatch, useAppSelector } from "@/redux/hook";
 import { RootState } from "@/redux/store";
 import { setFilteredByTimeCourses } from "@/redux/dataSlice";
-import { CourseCard } from "../CourseCard/CourseCard";
+// import { CourseCard } from "../CourseCard/CourseCard";
 import { convertToNaira } from "../Info/Wishlist";
 import { LinkStyle } from "@/styles/LinkStyles/Link";
 import Link from "next/link";
 import { CenterItemStyle } from "@/styles/HeroStyles/CenterItem";
 import { PopularCoursesStyles } from "@/styles/HomepageStyles/PopularCourses";
+import * as CommonAction from "../../pages/api/actionreducer/action/Common.action";
+import CourseCard from "../CourseCard/CourseCard";
 
 const PopularCourses = () => {
   const { filtersByTime, filteredByTimeCourses, allCourses } = useAppSelector(
     (state: RootState) => state.data
   );
 
-  // console.log(filtersByTime, filteredByTimeCourses, allCourses, 'filtersByTime, filteredByTimeCourses, allCourses,,')
+  const [popularCourses, setPopularCourses] = useState([]) as any;
 
+  console.log(filteredByTimeCourses, 'filteredByTimeCourses...')
   const dispatch = useAppDispatch();
   useEffect(() => {
     dispatch(setFilteredByTimeCourses());
   }, [dispatch, allCourses]);
+
+  const getPopularCourses = async() => {
+    const resData = await dispatch(CommonAction.getpCourses())
+    if(resData?.status) {
+      setPopularCourses(resData?.data)
+    }
+  }
+
+  useEffect(() => {
+    getPopularCourses()
+  }, [])
 
   return (
     <PopularCoursesStyles>
@@ -35,29 +49,30 @@ const PopularCourses = () => {
         <PaddedSectionStyle>
           <ButtonGroup filters={filtersByTime} />
           <CoursesGroupStyle>
-            {filteredByTimeCourses?.map((ele, index) => (
-              <CourseCard
+            {popularCourses?.map((ele: any, index: any) => (
+              <CourseCard 
                 key={index}
-                name={ele.name}
+                name={ele.product_name}
                 level={ele.level}
                 rating={ele.rating}
-                dollarPrice={ele.dollarPrice}
+                dollarPrice={ele.price}
                 field={ele.field}
                 category={ele.category}
                 isLoved={ele.isLoved}
-                img={ele.img}
+                img={ele.image}
                 nairaPrice={convertToNaira(ele.dollarPrice)}
-                noEnrolled={ele.noEnrolled}
+                noEnrolled={ele.users}
                 id={ele.id}
                 duration={ele.duration}
-                desc={ele.desc}
+                desc={ele.pro_description}
                 skills={ele.skills}
                 syllabus={ele.syllabus}
                 requirements={ele.requirements}
                 tutors={ele.tutors}
-                reviews={ele.reviews}
+                reviews={ele.users}
                 totalReviews={ele.totalReviews}
-                introVideo={ele.introVideo}
+                introVideo={ele.lecture_link}
+                slug={ele.slug}
               />
             ))}
           </CoursesGroupStyle>
@@ -65,7 +80,6 @@ const PopularCourses = () => {
       </div>
       <CenterItemStyle>
         <div className="pad">
-          {/* <Link href={"/courses"}> */}
           <Link href={"/courses"}>
             <div className="a">
               <LinkStyle color="var(--green, #097969)">

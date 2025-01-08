@@ -19,7 +19,7 @@ export const ButtonGroupStyles = styled.div`
 
 export const FilterButtonStyles = styled.button<IFilterStyle>`
   border-radius: 8px;
-  background: var(--purple-25, #f9f8fb);
+  background: var(--purple-25, #50C878);
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
   ${(props) =>
     props.$isSelected &&
@@ -32,7 +32,7 @@ export const FilterButtonStyles = styled.button<IFilterStyle>`
   justify-content: center;
   width: fit-content;
   align-items: center;
-  color: var(--grey-500, #525252);
+  color: var(--grey-500, #FFFFFF);
   font-size: 0.875rem;
   font-family: DM Sans;
   white-space: nowrap;

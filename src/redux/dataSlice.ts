@@ -1,4 +1,5 @@
 import {
+  AllCategory,
   AllCourses,
   Faqs,
   FiltersByTime,
@@ -8,7 +9,7 @@ import {
 } from "@/Constant/constant";
 import { IFilterButton } from "@/components/Button/FilterButton";
 import { IContactForm } from "@/components/Contactpage/Contact";
-import { ICourse } from "@/components/CourseCard/CourseCard";
+import { ICourse, ICategory } from "@/components/CourseCard/CourseCard";
 import { IFaq } from "@/components/HomepageComp/Faq";
 import { ITestimony } from "@/components/HomepageComp/Testimonials";
 import { INotification } from "@/components/Info/Notifications";
@@ -25,6 +26,7 @@ export interface InitialState {
   filtersByType: IFilterButton[];
   filteredByTimeCourses: ICourse[] | null;
   filteredByTypeCourses: ICourse[] | null;
+  courseCategory: ICategory[];
   testimonies: ITestimony[];
   faqs: IFaq[];
   contactForm: IContactForm | null;
@@ -47,6 +49,7 @@ const initialState: InitialState = {
   filtersByType: FiltersByType,
   filteredByTimeCourses: null,
   filteredByTypeCourses: null,
+  courseCategory: AllCategory,
   testimonies: Testimonies,
   faqs: Faqs,
   contactForm: null,
@@ -145,7 +148,7 @@ export const dataSlice = createSlice({
       state.testimonies = Testimonies;
     },
     showFaqAnswer: (state, { payload }) => {
-      const toggled = state.faqs.map((ele, index) => {
+      const toggled = state.faqs.map((ele: any, index: any) => {
         if (payload === index) {
           return { ...ele, showAnswer: !ele.showAnswer };
         } else {
@@ -166,7 +169,24 @@ export const dataSlice = createSlice({
     },
     setFilterCoursesByType: (state) => {
       const filter = state.filtersByType.find((ele) => ele.isSelected === true);
+      // console.log(filter?.filter, 'state check.....2222')
+
       if (filter?.filter === "All Courses") {
+        state.filteredByTypeCourses = state.allCourses;
+        // console.log(state.allCourses, 'inside all course..2222.')
+      } else {
+        const filtered = state.allCourses.filter((ele) => {
+          return ele.field === filter?.filter;
+        });
+        state.filteredByTypeCourses = filtered;
+      }
+    },
+    setFilterCategorysByType: (state) => {
+      const filter = state.filtersByType.find((ele) => ele.isSelected === true);
+      // console.log(state, 'state check.....')
+      // console.log(filter?.filter,'inside api call...')
+      if (filter?.filter === "All Courses") {
+        // console.log(state.allCourses, 'inside all course...')
         state.filteredByTypeCourses = state.allCourses;
       } else {
         const filtered = state.allCourses.filter((ele) => {
@@ -259,6 +279,7 @@ export const {
   pushNotification,
   setFiltersByType,
   setFilterCoursesByType,
+  setFilterCategorysByType,
   setContactForm,
   setSearchQuery,
   resetFiltersByType,

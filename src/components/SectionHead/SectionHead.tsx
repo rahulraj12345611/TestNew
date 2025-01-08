@@ -8,7 +8,7 @@ export interface ISectionHead{
 }
 const SectionHead:FunctionComponent<ISectionHead> = ({bigtext, smalltext}) => {
     return ( 
-        <SectionHeadStyles>
+        <SectionHeadStyles >
             <h3>{bigtext}</h3>
             <Small text={smalltext} />
         </SectionHeadStyles>
